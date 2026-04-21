@@ -50,3 +50,7 @@ install.packages(c("ggplot2", "raster", "patchwork"))
 ## Utilisation
 
 Ouvrir `Projet_Perso.Rmd` dans RStudio et cliquer sur **Knit → Knit to HTML**.
+
+## Aperçu des résultats
+
+![Indice UHI – Îlots de chaleur](./result.png)
