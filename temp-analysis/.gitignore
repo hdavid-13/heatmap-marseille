@@ -1,3 +1,4 @@
-venv
+venv/
 .env
 data_output/*.csv
+!data_output/.gitkeep
