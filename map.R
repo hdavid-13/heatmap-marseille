@@ -6,7 +6,7 @@ library(patchwork)
 # 1. CONFIGURATION
 # ══════════════════════════════════════════════════════
 
-BASE <- "./browser_images/"
+BASE <- "./Browser_images/"
 BBOX <- extent(5.25, 5.55, 43.20, 43.42)
 
 f_ndvi  <- paste0(BASE, "2023-08-22-00:00_2023-08-22-23:59_Sentinel-2_L2A_NDVI.tiff")
@@ -27,14 +27,24 @@ charger_raster <- function(fichier) {
 }
 
 faire_carte <- function(df, palette, titre, sous_titre, legende_titre, labels_legende) {
+  
+  # Calculer les limites réelles des données
+  xlim_data <- range(df$lon)
+  ylim_data <- range(df$lat)
+  
   ggplot(df, aes(x = lon, y = lat, fill = val)) +
     geom_raster(interpolate = TRUE) +
     scale_fill_gradientn(
       colors = palette, limits = c(0, 1), breaks = c(0, 0.5, 1),
       labels = labels_legende, name = legende_titre, na.value = "transparent",
-      guide  = guide_colorbar(barwidth = 0.8, barheight = 7, title.position = "top", title.hjust = 0.5)
+      guide  = guide_colorbar(barwidth = 0.8, barheight = 7, 
+                              title.position = "top", title.hjust = 0.5)
     ) +
-    coord_quickmap(xlim = c(5.25, 5.55), ylim = c(43.20, 43.42), expand = FALSE) +
+    coord_quickmap(
+      xlim   = xlim_data,   # ← limites issues des données
+      ylim   = ylim_data,
+      expand = FALSE
+    ) +
     labs(title = titre, subtitle = sous_titre, x = NULL, y = NULL) +
     theme(
       text          = element_text(size = 18),
@@ -45,6 +55,7 @@ faire_carte <- function(df, palette, titre, sous_titre, legende_titre, labels_le
       axis.text     = element_text(size = 11)
     )
 }
+
 
 # ══════════════════════════════════════════════════════
 # 3. INDICES SPECTRAUX
@@ -61,7 +72,7 @@ df_urban <- charger_raster(f_urban)
 df_swir  <- charger_raster(f_swir)
 
 p_ndvi  <- faire_carte(df_ndvi,  pal_ndvi,  "NDVI · Végétation",              "Densité du couvert végétal",  "Indice de végétation",        c("Sol nu", "Mixte", "Végétation"))
-p_ndwi  <- faire_carte(df_ndwi,  pal_ndwi,  "NDWI · Eau & Humidité",          "Teneur en eau de surface",    "Indice d'humidité",           c("Faible", "Moyen", "Fort"))
+p_ndwi  <- faire_carte(df_ndwi,  pal_ndwi,  "NDWI · Eau & Humidité",          "Teneur en eau de surface",    "Indice d'humidité",           c("Fort", "Moyen", "Faible"))
 p_urban <- faire_carte(df_urban, pal_urban, "Urban · Imperméabilisation",      "Surfaces artificialisées",    "Indice d'imperméabilisation", c("0", "0,5", "1"))
 p_swir  <- faire_carte(df_swir,  pal_swir,  "SWIR · Infrarouge courtes ondes", "Humidité sol & végétation",   "Indice de réflectance",       c("Humide", "Modéré", "Sec"))
 
@@ -111,22 +122,33 @@ r_uhi <- 0.40 * r_swir_raw +
 
 r_uhi <- disaggregate(r_uhi, fact = 2, method = "bilinear")
 r_uhi[r_uhi < quantile(values(r_uhi), 0.01, na.rm = TRUE)] <- NA
-names(r_uhi) <- "uhi"
 
 writeRaster(r_uhi, "marseille_uhi.tif", overwrite = TRUE)
 
 pal_uhi <- colorRampPalette(c("#2C7BB6", "#ABD9E9", "#FFFFBF", "#FDAE61", "#D7191C"))(256)
 
-p_uhi <- as.data.frame(r_uhi, xy = TRUE) |>
+df_uhi <- as.data.frame(r_uhi, xy = TRUE) |>
   setNames(c("lon", "lat", "val")) |>
-  na.omit() |>
+  na.omit()
+
+# ── Limites réelles des données ──────────────────────
+xlim_uhi <- range(df_uhi$lon)
+ylim_uhi <- range(df_uhi$lat)
+# ─────────────────────────────────────────────────────
+
+p_uhi <- df_uhi |>
   ggplot(aes(x = lon, y = lat, fill = val)) +
   geom_raster(interpolate = TRUE) +
   scale_fill_gradientn(
     colors = pal_uhi, name = "Intensité UHI",
-    guide  = guide_colorbar(barwidth = 0.8, barheight = 7, title.position = "top", title.hjust = 0.5)
+    guide  = guide_colorbar(barwidth = 0.8, barheight = 7, 
+                            title.position = "top", title.hjust = 0.5)
   ) +
-  coord_quickmap(xlim = c(5.25, 5.55), ylim = c(43.20, 43.42), expand = FALSE) +
+  coord_quickmap(
+    xlim   = xlim_uhi,   # ← limites dynamiques
+    ylim   = ylim_uhi,   # ← limites dynamiques
+    expand = FALSE
+  ) +
   labs(
     title    = "Îlots de chaleur urbains · Marseille",
     subtitle = "Indice composite SWIR / NDVI / Urban / NDWI – août 2023",
