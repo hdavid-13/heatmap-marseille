@@ -1,0 +1,333 @@
+{"_e":"root:init","_t":1780916860376,"format":"v0-jsonl","version":"56.1.14"}
+{"_e":"env:mode","_t":1780916860376,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1780916860377,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1780916860551,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1780916860702,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1780916862615,"atlas":false,"workers":14,"host":"::","port":8081}
+{"_e":"root:init","_t":1780916877140,"format":"v0-jsonl","version":"56.1.14"}
+{"_e":"env:mode","_t":1780916877141,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1780916877142,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1780916877300,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1780916877449,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1780916879351,"atlas":false,"workers":14,"host":"::","port":8081}
+{"_e":"root:init","_t":1780916904825,"format":"v0-jsonl","version":"56.1.14"}
+{"_e":"env:mode","_t":1780916904825,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1780916904826,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1780916904988,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1780916905133,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1780916906996,"atlas":false,"workers":14,"host":"::","port":8081}
+{"_e":"root:init","_t":1780916947673,"format":"v0-jsonl","version":"56.1.14"}
+{"_e":"env:mode","_t":1780916947673,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1780916947674,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1780916947834,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1780916947981,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1780916949890,"atlas":false,"workers":14,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1780916950962,"id":"1","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1780916950963,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1780916950966,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1780916951259,"id":"1","progress":0.010000000000000002,"total":1,"current":1}
+{"_e":"metro:bundling:progress","_t":1780916951359,"id":"1","progress":0.16000000000000003,"total":10,"current":4}
+{"_e":"metro:bundling:progress","_t":1780916951541,"id":"1","progress":0.25,"total":10,"current":5}
+{"_e":"metro:bundling:progress","_t":1780916951646,"id":"1","progress":0.25,"total":38,"current":19}
+{"_e":"metro:bundling:progress","_t":1780916951746,"id":"1","progress":0.25,"total":98,"current":34}
+{"_e":"metro:bundling:progress","_t":1780916951846,"id":"1","progress":0.28541940326515297,"total":146,"current":78}
+{"_e":"metro:bundling:progress","_t":1780916951947,"id":"1","progress":0.36465261733062615,"total":207,"current":125}
+{"_e":"metro:bundling:progress","_t":1780916952049,"id":"1","progress":0.36465261733062615,"total":268,"current":158}
+{"_e":"metro:bundling:progress","_t":1780916952149,"id":"1","progress":0.43560000000000004,"total":300,"current":198}
+{"_e":"metro:bundling:progress","_t":1780916952250,"id":"1","progress":0.43560000000000004,"total":403,"current":238}
+{"_e":"metro:bundling:progress","_t":1780916952350,"id":"1","progress":0.43560000000000004,"total":493,"current":299}
+{"_e":"metro:bundling:progress","_t":1780916952450,"id":"1","progress":0.43560000000000004,"total":550,"current":359}
+{"_e":"metro:bundling:progress","_t":1780916952550,"id":"1","progress":0.5119864526130803,"total":573,"current":410}
+{"_e":"metro:bundling:progress","_t":1780916952650,"id":"1","progress":0.5942365953160953,"total":611,"current":471}
+{"_e":"metro:bundling:progress","_t":1780916952750,"id":"1","progress":0.5965917789551084,"total":681,"current":526}
+{"_e":"metro:bundling:progress","_t":1780916952852,"id":"1","progress":0.6871234000243732,"total":719,"current":596}
+{"_e":"metro:bundling:progress","_t":1780916952952,"id":"1","progress":0.7256515775034293,"total":783,"current":667}
+{"_e":"metro:bundling:progress","_t":1780916953052,"id":"1","progress":0.8230189292460355,"total":819,"current":743}
+{"_e":"metro:bundling:progress","_t":1780916953152,"id":"1","progress":0.9502743129237617,"total":834,"current":813}
+{"_e":"metro:bundling:progress","_t":1780916953252,"id":"1","progress":0.9837683854171607,"total":859,"current":852}
+{"_e":"metro:bundling:progress","_t":1780916953352,"id":"1","progress":0.9976730665242769,"total":859,"current":858}
+{"_e":"metro:bundling:progress","_t":1780916953715,"id":"1","progress":0.999,"total":859,"current":859}
+{"_e":"metro:bundling:failed","_t":1780916953746,"id":"1","message":"Unable to resolve \"expo-status-bar\" from \"app/_layout.tsx\"\n  1 | import { Stack } from \"expo-router\";\n> 2 | import { StatusBar } from \"expo-status-bar\";\n    |                            ^\n  3 |\n  4 | export default function RootLayout() {\n  5 |   return (","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp/_layout.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"expo-status-bar\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"expo-status-bar","originModulePath":"app/_layout.tsx"}
+{"_e":"metro:bundling:started","_t":1780916959275,"id":"3","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1780916959275,"id":"3","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1780916959278,"id":"3","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1780916959377,"id":"3","progress":0.641470982085275,"total":653,"current":523}
+{"_e":"metro:bundling:failed","_t":1780916959444,"id":"3","message":"Unable to resolve \"expo-status-bar\" from \"app/_layout.tsx\"\n  1 | import { Stack } from \"expo-router\";\n> 2 | import { StatusBar } from \"expo-status-bar\";\n    |                            ^\n  3 |\n  4 | export default function RootLayout() {\n  5 |   return (","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp/_layout.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"expo-status-bar\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"expo-status-bar","originModulePath":"app/_layout.tsx"}
+{"_e":"metro:bundling:started","_t":1780916971179,"id":"5","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1780916971179,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1780916971180,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1780916971280,"id":"5","progress":0.6328634568077658,"total":626,"current":498}
+{"_e":"metro:bundling:failed","_t":1780916971363,"id":"5","message":"Unable to resolve \"expo-status-bar\" from \"app/_layout.tsx\"\n  1 | import { Stack } from \"expo-router\";\n> 2 | import { StatusBar } from \"expo-status-bar\";\n    |                            ^\n  3 |\n  4 | export default function RootLayout() {\n  5 |   return (","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp/_layout.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"expo-status-bar\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"expo-status-bar","originModulePath":"app/_layout.tsx"}
+{"_e":"metro:bundling:started","_t":1780917033488,"id":"7","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1780917033489,"id":"7","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1780917033493,"id":"7","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1780917033593,"id":"7","progress":0.521057321576256,"total":586,"current":423}
+{"_e":"metro:bundling:failed","_t":1780917033675,"id":"7","message":"Unable to resolve \"expo-status-bar\" from \"app/_layout.tsx\"\n  1 | import { Stack } from \"expo-router\";\n> 2 | import { StatusBar } from \"expo-status-bar\";\n    |                            ^\n  3 |\n  4 | export default function RootLayout() {\n  5 |   return (","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mapp/_layout.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"expo-status-bar\"\u001b[39m\n\n\u001b[90m \u001b[39mapp\u001b[2m (require.context)\u001b[22m\n","filename":null,"targetModuleName":"expo-status-bar","originModulePath":"app/_layout.tsx"}
+{"_e":"metro:bundling:started","_t":1780917070374,"id":"9","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1780917070374,"id":"9","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1780917070377,"id":"9","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1780917070477,"id":"9","progress":0.215648735388921,"total":379,"current":176}
+{"_e":"metro:bundling:progress","_t":1780917070592,"id":"9","progress":0.7863011142921235,"total":671,"current":595}
+{"_e":"metro:bundling:progress","_t":1780917070692,"id":"9","progress":0.999,"total":863,"current":863}
+{"_e":"metro:bundling:done","_t":1780917070737,"id":"9","total":863,"ms":362.360687}
+{"_e":"metro:client_log","_t":1780917070959,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1780917070959,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1780917070965,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1780917077202,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780917077286,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780917077376,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780917077500,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780917078122,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780917078230,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780917079155,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780917079275,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780917079664,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780917438313,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780917438403,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780917439372,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780917439468,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780917444007,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:bundling:started","_t":1780917689763,"id":"f","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1780917689763,"id":"f","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1780917689789,"id":"f","total":1,"ms":26.161317}
+{"_e":"metro:client_log","_t":1780917690004,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1780917690004,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1780917690013,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"root:init","_t":1780917752731,"format":"v0-jsonl","version":"56.1.14"}
+{"_e":"env:mode","_t":1780917752732,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1780917752733,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1780917752915,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1780917753065,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1780917755025,"atlas":false,"workers":14,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1780917755822,"id":"1","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1780917755822,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1780917755825,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1780917755925,"id":"1","progress":0.1435699462890625,"total":256,"current":97}
+{"_e":"metro:bundling:progress","_t":1780917756025,"id":"1","progress":0.5291596836087399,"total":565,"current":411}
+{"_e":"metro:bundling:progress","_t":1780917756125,"id":"1","progress":0.8697964746470197,"total":757,"current":706}
+{"_e":"metro:bundling:started","_t":1780917756154,"id":"2","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1780917756154,"id":"1","progress":0.8697964746470197,"total":757,"current":706}
+{"_e":"metro:bundling:progress","_t":1780917756154,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1780917756197,"id":"1","total":757,"ms":375.023179}
+{"_e":"metro:bundling:progress","_t":1780917756197,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1780917756207,"id":"2","total":1,"ms":53.005863}
+{"_e":"metro:client_log","_t":1780917756382,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1780917756382,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1780917756385,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1780917756392,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1780917756392,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1780917756394,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:bundling:started","_t":1780917758135,"id":"4","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1780917758135,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1780917758154,"id":"4","total":1,"ms":18.442975}
+{"_e":"metro:client_log","_t":1780917758322,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1780917758322,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1780917758323,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"root:init","_t":1780918195426,"format":"v0-jsonl","version":"56.1.14"}
+{"_e":"env:mode","_t":1780918195427,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1780918195428,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1780918195587,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1780918195741,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1780918197813,"atlas":false,"workers":14,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1780918198585,"id":"1","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1780918198586,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1780918198589,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1780918198688,"id":"1","progress":0.13986383766276686,"total":246,"current":92}
+{"_e":"metro:bundling:progress","_t":1780918198788,"id":"1","progress":0.494141555806702,"total":542,"current":381}
+{"_e":"metro:bundling:progress","_t":1780918198888,"id":"1","progress":0.8600656783636705,"total":730,"current":677}
+{"_e":"metro:bundling:progress","_t":1780918198988,"id":"1","progress":0.9906433262920057,"total":853,"current":849}
+{"_e":"metro:bundling:progress","_t":1780918199248,"id":"1","progress":0.9929783716254196,"total":853,"current":850}
+{"_e":"metro:bundling:progress","_t":1780918199348,"id":"1","progress":0.9976757706868578,"total":860,"current":859}
+{"_e":"metro:bundling:progress","_t":1780918199453,"id":"1","progress":0.9976757706868578,"total":874,"current":871}
+{"_e":"metro:bundling:progress","_t":1780918199695,"id":"1","progress":0.9976757706868578,"total":874,"current":872}
+{"_e":"metro:bundling:progress","_t":1780918200098,"id":"1","progress":0.9977129795935465,"total":874,"current":873}
+{"_e":"metro:bundling:progress","_t":1780918200198,"id":"1","progress":0.9977129795935465,"total":875,"current":873}
+{"_e":"metro:bundling:progress","_t":1780918200879,"id":"1","progress":0.9977155918367347,"total":875,"current":874}
+{"_e":"metro:bundling:progress","_t":1780918201467,"id":"1","progress":0.999,"total":875,"current":875}
+{"_e":"metro:bundling:done","_t":1780918201507,"id":"1","total":875,"ms":2921.678165}
+{"_e":"metro:client_log","_t":1780918201788,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1780918201788,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1780918201791,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1780918201794,"level":"error","data":["Invalid style property of \"background\". Please use long-form properties."]}
+{"_e":"metro:client_log","_t":1780918201805,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1780918201883,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"root:init","_t":1780918572956,"format":"v0-jsonl","version":"56.1.14"}
+{"_e":"env:mode","_t":1780918572956,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1780918572957,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1780918573118,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1780918573266,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1780918575499,"atlas":false,"workers":14,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1780918576262,"id":"1","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1780918576262,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1780918576265,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1780918576365,"id":"1","progress":0.14284828569657138,"total":254,"current":96}
+{"_e":"metro:bundling:progress","_t":1780918576465,"id":"1","progress":0.5040494674586188,"total":562,"current":399}
+{"_e":"metro:bundling:progress","_t":1780918576565,"id":"1","progress":0.8681739585701393,"total":762,"current":710}
+{"_e":"metro:bundling:progress","_t":1780918576665,"id":"1","progress":0.9976730665242769,"total":859,"current":858}
+{"_e":"metro:bundling:progress","_t":1780918576768,"id":"1","progress":0.999,"total":859,"current":859}
+{"_e":"metro:bundling:progress","_t":1780918576872,"id":"1","progress":0.999,"total":880,"current":875}
+{"_e":"metro:bundling:progress","_t":1780918576971,"id":"1","progress":0.999,"total":1019,"current":877}
+{"_e":"metro:bundling:progress","_t":1780918577072,"id":"1","progress":0.999,"total":1021,"current":884}
+{"_e":"metro:bundling:progress","_t":1780918577172,"id":"1","progress":0.999,"total":1022,"current":893}
+{"_e":"metro:bundling:progress","_t":1780918577272,"id":"1","progress":0.999,"total":1025,"current":910}
+{"_e":"metro:bundling:progress","_t":1780918577373,"id":"1","progress":0.999,"total":1036,"current":949}
+{"_e":"metro:bundling:progress","_t":1780918577477,"id":"1","progress":0.999,"total":1042,"current":987}
+{"_e":"metro:bundling:progress","_t":1780918577577,"id":"1","progress":0.999,"total":1084,"current":1031}
+{"_e":"metro:bundling:progress","_t":1780918577679,"id":"1","progress":0.999,"total":1351,"current":1049}
+{"_e":"metro:bundling:progress","_t":1780918577802,"id":"1","progress":0.999,"total":1384,"current":1082}
+{"_e":"metro:bundling:progress","_t":1780918577903,"id":"1","progress":0.999,"total":1388,"current":1111}
+{"_e":"metro:bundling:progress","_t":1780918578002,"id":"1","progress":0.999,"total":1389,"current":1138}
+{"_e":"metro:bundling:progress","_t":1780918578117,"id":"1","progress":0.999,"total":1391,"current":1160}
+{"_e":"metro:bundling:progress","_t":1780918578218,"id":"1","progress":0.999,"total":1392,"current":1200}
+{"_e":"metro:bundling:progress","_t":1780918578317,"id":"1","progress":0.999,"total":1392,"current":1266}
+{"_e":"metro:bundling:progress","_t":1780918578417,"id":"1","progress":0.999,"total":1401,"current":1295}
+{"_e":"metro:bundling:progress","_t":1780918578518,"id":"1","progress":0.999,"total":1401,"current":1304}
+{"_e":"metro:bundling:progress","_t":1780918578618,"id":"1","progress":0.999,"total":1406,"current":1317}
+{"_e":"metro:bundling:progress","_t":1780918578720,"id":"1","progress":0.999,"total":1419,"current":1356}
+{"_e":"metro:bundling:progress","_t":1780918578821,"id":"1","progress":0.999,"total":1422,"current":1399}
+{"_e":"metro:bundling:progress","_t":1780918578922,"id":"1","progress":0.999,"total":1424,"current":1415}
+{"_e":"metro:bundling:progress","_t":1780918579023,"id":"1","progress":0.999,"total":1424,"current":1418}
+{"_e":"metro:bundling:progress","_t":1780918579106,"id":"1","progress":0.999,"total":1424,"current":1419}
+{"_e":"metro:bundling:progress","_t":1780918579207,"id":"1","progress":0.999,"total":1424,"current":1420}
+{"_e":"metro:bundling:progress","_t":1780918579350,"id":"1","progress":0.999,"total":1424,"current":1421}
+{"_e":"metro:bundling:progress","_t":1780918579544,"id":"1","progress":0.999,"total":1424,"current":1422}
+{"_e":"metro:bundling:progress","_t":1780918579862,"id":"1","progress":0.999,"total":1424,"current":1423}
+{"_e":"metro:bundling:progress","_t":1780918580164,"id":"1","progress":0.999,"total":1424,"current":1424}
+{"_e":"metro:bundling:done","_t":1780918580233,"id":"1","total":1424,"ms":3971.430477}
+{"_e":"metro:client_log","_t":1780918580821,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1780918580823,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1780918580823,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1780918580843,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1780918580914,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1780918601691,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1780918602149,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"root:init","_t":1780919812279,"format":"v0-jsonl","version":"56.1.14"}
+{"_e":"env:mode","_t":1780919812279,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1780919812281,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1780919812455,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1780919812620,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1780919814824,"atlas":false,"workers":14,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1780919815592,"id":"1","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1780919815592,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1780919815595,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1780919815695,"id":"1","progress":0.15041420289436017,"total":263,"current":102}
+{"_e":"metro:bundling:progress","_t":1780919815795,"id":"1","progress":0.5314715878527068,"total":572,"current":417}
+{"_e":"metro:bundling:progress","_t":1780919815895,"id":"1","progress":0.6053298174015538,"total":883,"current":687}
+{"_e":"metro:bundling:progress","_t":1780919815997,"id":"1","progress":0.6053298174015538,"total":1280,"current":946}
+{"_e":"metro:bundling:progress","_t":1780919816097,"id":"1","progress":0.7901234567901234,"total":1341,"current":1192}
+{"_e":"metro:bundling:progress","_t":1780919816197,"id":"1","progress":0.9127809119610787,"total":1390,"current":1328}
+{"_e":"metro:bundling:progress","_t":1780919816301,"id":"1","progress":0.999,"total":1424,"current":1424}
+{"_e":"metro:bundling:done","_t":1780919816354,"id":"1","total":1424,"ms":761.505257}
+{"_e":"metro:client_log","_t":1780919816935,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1780919816935,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1780919816939,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1780919816967,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1780919817037,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"root:init","_t":1780922358412,"format":"v0-jsonl","version":"56.1.14"}
+{"_e":"env:mode","_t":1780922358413,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1780922358414,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1780922358596,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1780922358753,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1780922360963,"atlas":false,"workers":14,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1780922361860,"id":"1","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1780922361860,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1780922361863,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1780922361964,"id":"1","progress":0.0672153635116598,"total":216,"current":56}
+{"_e":"metro:bundling:progress","_t":1780922362066,"id":"1","progress":0.34647520457363934,"total":457,"current":269}
+{"_e":"metro:bundling:progress","_t":1780922362167,"id":"1","progress":0.5399210281729329,"total":822,"current":604}
+{"_e":"metro:bundling:progress","_t":1780922362272,"id":"1","progress":0.8059794424767018,"total":939,"current":843}
+{"_e":"metro:bundling:progress","_t":1780922362372,"id":"1","progress":0.8059794424767018,"total":1284,"current":932}
+{"_e":"metro:bundling:progress","_t":1780922362472,"id":"1","progress":0.8510911447551657,"total":1304,"current":1203}
+{"_e":"metro:bundling:progress","_t":1780922362572,"id":"1","progress":0.8889795918367347,"total":1400,"current":1320}
+{"_e":"metro:bundling:progress","_t":1780922362672,"id":"1","progress":0.9971830999905142,"total":1419,"current":1417}
+{"_e":"metro:bundling:done","_t":1780922362762,"id":"1","total":1419,"ms":901.653273}
+{"_e":"metro:client_log","_t":1780922363380,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1780922363381,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1780922363381,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1780922363415,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1780922363491,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"root:init","_t":1780923027443,"format":"v0-jsonl","version":"56.1.14"}
+{"_e":"env:mode","_t":1780923027443,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1780923027445,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1780923027629,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1780923027790,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1780923030023,"atlas":false,"workers":14,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1780923030782,"id":"1","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1780923030782,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1780923030785,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1780923030885,"id":"1","progress":0.15401922392310433,"total":265,"current":104}
+{"_e":"metro:bundling:progress","_t":1780923030985,"id":"1","progress":0.5157629546784427,"total":589,"current":423}
+{"_e":"metro:bundling:progress","_t":1780923031085,"id":"1","progress":0.6976933029085509,"total":856,"current":715}
+{"_e":"metro:bundling:progress","_t":1780923031190,"id":"1","progress":0.6976933029085509,"total":1227,"current":880}
+{"_e":"metro:bundling:progress","_t":1780923031291,"id":"1","progress":0.7939179259857851,"total":1303,"current":1161}
+{"_e":"metro:bundling:progress","_t":1780923031390,"id":"1","progress":0.8835999999999999,"total":1400,"current":1316}
+{"_e":"metro:bundling:progress","_t":1780923031491,"id":"1","progress":0.999,"total":1424,"current":1424}
+{"_e":"metro:bundling:done","_t":1780923031545,"id":"1","total":1424,"ms":763.253477}
+{"_e":"metro:client_log","_t":1780923032141,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1780923032141,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1780923032141,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1780923032169,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1780923032240,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1780923052858,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923052932,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923053019,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923053107,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923053187,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923053270,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923053362,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923053467,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923053553,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923058273,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923058698,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923058772,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923058851,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923058935,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923059008,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923059087,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923059168,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923059263,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923059371,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923059457,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923059867,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923059937,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923060026,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923060100,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923060172,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923060252,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923060341,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923060433,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923060521,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923061776,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923062284,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923062367,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923062440,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923062520,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923062602,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923062673,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923062761,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923062854,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923062953,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923064010,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923064442,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923064520,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923064587,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923064658,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923064699,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923065201,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923065284,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923065359,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923065451,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923065532,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923065608,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923065685,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923065758,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923065796,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923066211,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923066284,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923066367,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923066446,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923066524,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923066603,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923066675,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923066758,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1780923066838,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
