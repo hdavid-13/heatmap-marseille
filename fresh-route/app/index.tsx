@@ -1,133 +1,134 @@
-import { useState } from "react";
-import { View, Text, TouchableOpacity, StyleSheet, Platform, ActivityIndicator } from "react-native";
+import { useState, useRef } from "react";
+import { View, Text, TouchableOpacity, StyleSheet, Platform, ActivityIndicator, Animated, PanResponder, GestureResponderEvent } from "react-native";
 import { useRouter } from "expo-router";
 import { SafeAreaView } from "react-native-safe-area-context";
-import CalanqueScene, { type CalanqueSceneProps } from "@/components/scene/CalanqueScene";
+import RouteMap from "@/components/routes/RouteMap";
 import { colors } from "@/theme";
 import { useRoute } from "@/hooks/useRoute";
-import type { Calanque } from "@/data/calanques";
+import { DEMO_ROUTES } from "@/data/demoRoutes";
+import type { DemoRoute } from "@/types";
 
 export default function HeroScreen() {
   const router = useRouter();
   const { loading, calculateFromDemo } = useRoute();
-  const [selected, setSelected] = useState<Calanque | null>(null);
+  const [currentRouteIndex, setCurrentRouteIndex] = useState(0);
+  const panX = useRef(new Animated.Value(0)).current;
+  const panResponder = useRef(
+    PanResponder.create({
+      onStartShouldSetPanResponder: () => true,
+      onMoveShouldSetPanResponder: (_, { dx }) => Math.abs(dx) > 10,
+      onPanResponderMove: (_, { dx }) => panX.setValue(dx),
+      onPanResponderRelease: (_, { dx }) => {
+        if (dx > 50 && currentRouteIndex > 0) {
+          // Swipe right → previous route
+          setCurrentRouteIndex(currentRouteIndex - 1);
+          Animated.spring(panX, { toValue: 0, useNativeDriver: false }).start();
+        } else if (dx < -50 && currentRouteIndex < DEMO_ROUTES.length - 1) {
+          // Swipe left → next route
+          setCurrentRouteIndex(currentRouteIndex + 1);
+          Animated.spring(panX, { toValue: 0, useNativeDriver: false }).start();
+        } else {
+          // Return to original position
+          Animated.spring(panX, { toValue: 0, useNativeDriver: false }).start();
+        }
+      },
+    })
+  ).current;
 
-  const handleCalanqueSelect = (c: Calanque) => {
-    setSelected(c);
-  };
+  const currentRoute = DEMO_ROUTES[currentRouteIndex];
 
   const handleGoRoute = async () => {
-    if (!selected) return;
-    const demo = {
-      id: selected.id,
-      name: `Vieux-Port → ${selected.name}`,
-      description: selected.description,
-      from: { lat: 43.2951, lon: 5.3749, label: "Vieux-Port" },
-      to:   { lat: selected.lat, lon: selected.lon, label: selected.name },
-      badge: (selected.difficulty === "easy" ? "cool" : selected.difficulty === "medium" ? "warm" : "hot") as "cool" | "warm" | "hot",
-      distance: selected.distanceFromVieuxPort,
-      freshScore: selected.difficulty === "easy" ? 0.75 : selected.difficulty === "medium" ? 0.55 : 0.35,
-      highlights: selected.highlights,
-    };
-    const route = await calculateFromDemo(demo);
-    router.push({ pathname: "/route-detail", params: { data: JSON.stringify(route), name: demo.name } });
+    const route = await calculateFromDemo(currentRoute);
+    router.push({ pathname: "/route-detail", params: { data: JSON.stringify(route), name: currentRoute.name } });
   };
 
-  const diffColor = selected
-    ? selected.difficulty === "easy" ? colors.primary
-    : selected.difficulty === "medium" ? colors.warm : colors.hot
-    : colors.primary;
+  const badgeColor =
+    currentRoute.badge === "cool" ? colors.primary :
+    currentRoute.badge === "warm" ? colors.warm :
+    colors.hot;
 
   return (
-    <View style={styles.container}>
-      {/* 3D Scene */}
-      <CalanqueScene onCalanqueSelect={handleCalanqueSelect} />
+    <View style={styles.container} {...panResponder.panHandlers}>
+      {/* Map Background */}
+      <RouteMap
+        routes={DEMO_ROUTES}
+        currentRouteIndex={currentRouteIndex}
+        onRouteSelect={() => {}}
+      />
 
-      {/* Bottom gradient overlay */}
+      {/* Overlay gradient */}
       <View style={styles.overlay} pointerEvents="none" />
 
       <SafeAreaView style={styles.safe} pointerEvents="box-none">
         {/* Top bar */}
         <View style={styles.topBar}>
           <Text style={styles.location}>📍 MARSEILLE</Text>
-          <View style={styles.liveRow}>
-            <View style={styles.liveDot} />
-            <Text style={styles.liveText}>Live data</Text>
+          <View style={styles.routeCounter}>
+            <Text style={styles.counterText}>{currentRouteIndex + 1} / {DEMO_ROUTES.length}</Text>
           </View>
         </View>
 
-        {/* Hint when nothing selected */}
-        {!selected && (
-          <View style={styles.hintWrap} pointerEvents="none">
-            <Text style={styles.hint}>Tap a marker to explore a calanque</Text>
+        {/* Info panel */}
+        <View style={styles.infoPanel}>
+          {/* Badge */}
+          <View style={[styles.badge, { borderColor: badgeColor }]}>
+            <Text style={[styles.badgeText, { color: badgeColor }]}>
+              {currentRoute.badge === "cool" ? "🌿 Cool"
+                : currentRoute.badge === "warm" ? "☀️ Warm" : "🔥 Hot"}
+            </Text>
           </View>
-        )}
 
-        {/* Info panel when a calanque is selected */}
-        {selected && (
-          <View style={styles.infoPanel}>
-            {/* Difficulty badge */}
-            <View style={[styles.diffBadge, { borderColor: diffColor }]}>
-              <Text style={[styles.diffText, { color: diffColor }]}>
-                {selected.difficulty === "easy" ? "🌿 Easy"
-                  : selected.difficulty === "medium" ? "☀️ Medium" : "🔥 Hard"}
-              </Text>
+          {/* Route name */}
+          <Text style={styles.routeName}>{currentRoute.name}</Text>
+          <Text style={styles.routeDesc}>{currentRoute.description}</Text>
+
+          {/* Stats */}
+          <View style={styles.statsRow}>
+            <View style={styles.statItem}>
+              <Text style={styles.statValue}>{currentRoute.distance}</Text>
+              <Text style={styles.statLabel}>Distance</Text>
             </View>
+            <View style={styles.statDivider} />
+            <View style={styles.statItem}>
+              <Text style={styles.statValue}>{Math.round(currentRoute.freshScore * 100)}%</Text>
+              <Text style={styles.statLabel}>Fresh Score</Text>
+            </View>
+          </View>
 
-            <Text style={styles.calName}>{selected.name}</Text>
-            <Text style={styles.calDesc}>{selected.description}</Text>
-
-            {/* Stats row */}
-            <View style={styles.statsRow}>
-              <View style={styles.statItem}>
-                <Text style={styles.statValue}>{selected.distanceFromVieuxPort}</Text>
-                <Text style={styles.statLabel}>from Vieux-Port</Text>
+          {/* Highlights */}
+          <View style={styles.tagsRow}>
+            {currentRoute.highlights.map((h) => (
+              <View key={h} style={styles.tag}>
+                <Text style={styles.tagText}>{h}</Text>
               </View>
-              <View style={styles.statDivider} />
-              <View style={styles.statItem}>
-                <Text style={styles.statValue}>{selected.highlights.length}</Text>
-                <Text style={styles.statLabel}>highlights</Text>
-              </View>
-            </View>
-
-            {/* Tags */}
-            <View style={styles.tagsRow}>
-              {selected.highlights.map((h) => (
-                <View key={h} style={styles.tag}>
-                  <Text style={styles.tagText}>{h}</Text>
-                </View>
-              ))}
-            </View>
-
-            {/* CTA */}
-            <TouchableOpacity
-              style={[styles.routeBtn, { backgroundColor: diffColor }]}
-              onPress={handleGoRoute}
-              disabled={loading}
-              activeOpacity={0.88}
-            >
-              {loading
-                ? <ActivityIndicator color="#fff" size="small" />
-                : <Text style={styles.routeBtnText}>Calculate route  →</Text>}
-            </TouchableOpacity>
-
-            <TouchableOpacity onPress={() => setSelected(null)} style={styles.dismissBtn}>
-              <Text style={styles.dismissText}>← Back to map</Text>
-            </TouchableOpacity>
+            ))}
           </View>
-        )}
 
-        {/* Bottom nav when nothing selected */}
-        {!selected && (
-          <View style={styles.bottomNav}>
-            <TouchableOpacity style={styles.primaryBtn} onPress={() => router.push("/routes")} activeOpacity={0.88}>
-              <Text style={styles.primaryBtnText}>All routes  →</Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.secondaryBtn} onPress={() => router.push("/heatmap")} activeOpacity={0.88}>
-              <Text style={styles.secondaryBtnText}>Heat map</Text>
-            </TouchableOpacity>
-          </View>
-        )}
+          {/* CTA Button */}
+          <TouchableOpacity
+            style={[styles.routeBtn, { backgroundColor: badgeColor }]}
+            onPress={handleGoRoute}
+            disabled={loading}
+            activeOpacity={0.88}
+          >
+            {loading
+              ? <ActivityIndicator color="#fff" size="small" />
+              : <Text style={styles.routeBtnText}>Navigate  →</Text>}
+          </TouchableOpacity>
+
+          {/* Swipe hint */}
+          <Text style={styles.swipeHint}>← Swipe to explore other routes →</Text>
+        </View>
+
+        {/* Bottom nav */}
+        <View style={styles.bottomNav}>
+          <TouchableOpacity style={styles.secondaryBtn} onPress={() => router.push("/routes")} activeOpacity={0.88}>
+            <Text style={styles.secondaryBtnText}>All routes</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.secondaryBtn} onPress={() => router.push("/heatmap")} activeOpacity={0.88}>
+            <Text style={styles.secondaryBtnText}>Heat map</Text>
+          </TouchableOpacity>
+        </View>
       </SafeAreaView>
     </View>
   );
@@ -138,7 +139,7 @@ const styles = StyleSheet.create({
   overlay: {
     position: "absolute",
     top: 0, left: 0, right: 0, bottom: 0,
-    backgroundColor: "transparent",
+    background: "linear-gradient(180deg, transparent 0%, rgba(10, 22, 40, 0.3) 50%, rgba(10, 22, 40, 0.9) 100%)",
   },
   safe: { flex: 1 },
 
@@ -150,12 +151,8 @@ const styles = StyleSheet.create({
     paddingTop: Platform.OS === "web" ? 16 : 8,
   },
   location: { color: colors.turquoise, fontWeight: "700", fontSize: 12, letterSpacing: 2 },
-  liveRow:  { flexDirection: "row", alignItems: "center", gap: 6 },
-  liveDot:  { width: 7, height: 7, borderRadius: 4, backgroundColor: colors.primary },
-  liveText: { color: colors.textSub, fontSize: 12 },
-
-  hintWrap: { flex: 1, justifyContent: "flex-end", alignItems: "center", paddingBottom: 180 },
-  hint: { color: colors.textDim, fontSize: 13, letterSpacing: 0.5 },
+  routeCounter: { flexDirection: "row", alignItems: "center", gap: 6 },
+  counterText: { color: colors.textSub, fontSize: 12 },
 
   // ── Info panel ──────────────────────────────────────────────────────────────
   infoPanel: {
@@ -169,14 +166,14 @@ const styles = StyleSheet.create({
     padding: 20,
     gap: 12,
   },
-  diffBadge: {
+  badge: {
     alignSelf: "flex-start",
     borderWidth: 1, borderRadius: 20,
     paddingHorizontal: 10, paddingVertical: 4,
   },
-  diffText:  { fontSize: 12, fontWeight: "700" },
-  calName:   { fontSize: 24, fontWeight: "800", color: colors.text },
-  calDesc:   { fontSize: 13, color: colors.textSub, lineHeight: 18 },
+  badgeText:  { fontSize: 12, fontWeight: "700" },
+  routeName:   { fontSize: 24, fontWeight: "800", color: colors.text },
+  routeDesc:   { fontSize: 13, color: colors.textSub, lineHeight: 18 },
 
   statsRow:    { flexDirection: "row", alignItems: "center", gap: 16 },
   statItem:    { alignItems: "center" },
@@ -193,8 +190,13 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 6 }, shadowOpacity: 0.3, shadowRadius: 12, elevation: 6,
   },
   routeBtnText: { color: "#fff", fontWeight: "700", fontSize: 15 },
-  dismissBtn:   { alignItems: "center" },
-  dismissText:  { color: colors.textDim, fontSize: 13 },
+
+  swipeHint: {
+    textAlign: "center",
+    color: colors.textDim,
+    fontSize: 12,
+    marginTop: 8,
+  },
 
   // ── Bottom nav ──────────────────────────────────────────────────────────────
   bottomNav: {
@@ -202,13 +204,8 @@ const styles = StyleSheet.create({
     padding: 16,
     paddingBottom: 24,
     gap: 10,
+    flexDirection: "row",
   },
-  primaryBtn: {
-    backgroundColor: colors.primary, borderRadius: 16, padding: 17, alignItems: "center",
-    shadowColor: colors.primary, shadowOffset: { width: 0, height: 8 },
-    shadowOpacity: 0.4, shadowRadius: 16, elevation: 8,
-  },
-  primaryBtnText:   { color: "#fff", fontWeight: "700", fontSize: 16 },
-  secondaryBtn:     { borderWidth: 1.5, borderColor: colors.cardBorder, borderRadius: 16, padding: 15, alignItems: "center" },
+  secondaryBtn:     { flex: 1, borderWidth: 1.5, borderColor: colors.cardBorder, borderRadius: 16, padding: 15, alignItems: "center" },
   secondaryBtnText: { color: colors.textSub, fontWeight: "500", fontSize: 15 },
 });
