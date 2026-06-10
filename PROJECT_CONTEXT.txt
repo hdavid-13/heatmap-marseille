@@ -1,6 +1,6 @@
 ================================================================================
 PROJECT CONTEXT — Marseille Green Project
-Updated: 2026-06-08
+Updated: 2026-06-10
 ================================================================================
 
 ## OBIETTIVO
@@ -139,24 +139,23 @@ Struttura src/:
 │       └── SectionHeader.tsx
 
 --- WebGL raster layer ---
-Architettura: download float32 raw UNA VOLTA al mount (~1.7MB),
-poi setYear(year) → aggiorna u_shift uniform → GPU re-render senza HTTP.
-Shader GLSL: LUMINANCE texture float → heat colormap (verde→rosso) + anomaly shift.
-Anomaly shift: media zone_anomaly_norm × 0.15 → ±15% shift sul colore.
-OES_texture_float extension richiesta (supportata da tutti i browser moderni).
+Fix: float32 incompatibile con WebGL1 su alcuni device → encoding CPU-side in Uint8.
+Texture LUMINANCE UNSIGNED_BYTE: v normalizzato in [1,255], 0=nodata.
+Shader: if (norm < 0.004) discard; altrimenti heat colormap verde→rosso.
+Anno selezionato → u_shift uniform → GPU re-render senza HTTP.
 
 --- Features dashboard ---
 - KPI: avg UHI, hot/cool districts count, hottest/coolest zone
 - Mappa Leaflet dark con WebGL raster overlay (pixel-level)
-- Toggle: 🛰 Pixel / ⬡ Districts / ⊕ Both
-- Timeline slider 2000→2024 fisso sotto la mappa (sempre visibile)
+- Toggle: Pixel / Districts / Both
+- Timeline slider 2000→2024 fisso sotto la mappa
 - Ranking 111 quartieri con click → highlight + flyTo mappa
 - Quartier detail: score gauge, vs avg, percentile, monthly risk, distribution histogram
 - Trend chart 2000→2024 con linea regressione + highlight 2003
 - Seasonal profile con barre colorate per temperatura
 
 ================================================================================
-5. fresh-route/ — APP MOBILE (Expo)
+5. fresh-route/ — APP MOBILE (Expo) — REDESIGN COMPLETO 2026-06-10
 ================================================================================
 
 Stack: Expo 56, React Native 0.85, TypeScript, expo-router
@@ -166,35 +165,84 @@ Avvio:
 EXPO_NO_DOTEXPO_FOLDER=1 TMPDIR=/goinfre/eielmini/.expo-cache HOME=/goinfre/eielmini
 node node_modules/expo/bin/cli start --web --port 8081
 
-Struttura (single responsibility):
+--- Navigazione (expo-router Stack) ---
 app/
-├── _layout.tsx        → navigazione Stack
-├── index.tsx          → Hero screen: scena 3D Calanque interattiva
-├── routes.tsx         → lista percorsi demo
-├── route-detail.tsx   → dettaglio percorso con stats
-└── heatmap.tsx        → lista quartieri per rischio mensile
+├── _layout.tsx       → Stack con headerShown:false, slide_from_right
+├── index.tsx         → Home: carousel 3D + card info percorso
+├── routes.tsx        → lista percorsi con RouteCard
+├── route-detail.tsx  → dettaglio percorso (stats + score bar + SVG path)
+└── heatmap.tsx       → ranking quartieri per rischio mensile
 
-src/
-├── types/index.ts                      → HeatLabel, RouteResponse, DemoRoute...
-├── theme/index.ts                      → colori, heat config, radius, spacing
-├── data/
-│   ├── demoRoutes.ts                   → 4 percorsi demo
-│   └── calanques.ts                    → 6 calanques reali con coords + toScene()
-├── api/engine.ts                       → fetch → marseille-engine
-├── hooks/useLocation.ts / useRoute.ts
-└── components/scene/
-    ├── CalanqueScene.tsx               → Canvas + OrbitControls + markers
-    ├── Terrain.tsx                     → acqua animata + cliff
-    ├── CalanqueMarkers.tsx             → sphere markers + route arc 3D
-    ├── SceneLighting.tsx               → luce mediterranea
-    └── StarField.tsx                   → stelle procedurali
+Back navigation: usare router.replace("/") su tutte le schermate secondarie
+(router.back() causa GO_BACK not handled su web se non c'è stack entry)
 
---- Calanques interattive ---
-6 calanques reali: Sormiou, Morgiou, Sugiton, En-Vau, Port-Pin, Port-Miou
-Click marker → info panel con nome, difficoltà (verde/arancio/rosso), highlights
-"Calculate route" → chiama engine A★ → route-detail screen
-Arco 3D verde da Vieux-Port alla calanque selezionata
-OrbitControls: ruota, zoom, pan disabilitato
+--- Home screen (index.tsx) — architettura ---
+- PanResponder sul View root cattura swipe (dx < -60 → next, dx > 60 → prev)
+- panOffsetRef (useRef<number>) aggiornato direttamente nel PanResponder
+  → NIENTE setState/Animated durante lo swipe → zero re-render React
+- Canvas Three.js avvolto in View pointerEvents="none"
+  → le gesture vanno al PanResponder, non al canvas
+- key={isFocused ? "focused" : "blurred"} sul Canvas
+  → forza remount WebGL context quando si torna sulla schermata
+- navigatingRef (useRef<boolean>) in handleOrbTap
+  → impedisce chiamate concorrenti a calculateFromDemo
+
+--- 3D Scene (RouteCarouselScene) ---
+src/components/scene/
+├── RouteCarouselScene.tsx   → scena Three.js + fog + luci + CarouselGroup
+│   CarouselGroup: panOffsetRef letto in useFrame (no re-render React)
+│   lerp: position.x += (target - current) * min(1, delta*10)
+│   ORB_SPACING = 4.2 world units
+├── RouteOrb.tsx             → dispatcher route.id → componente orb
+│   ORB_MAP: { "1": VieuxPortOrb }  altri → GenericOrb
+└── orbs/
+    ├── GenericOrb.tsx       → orb generico colorato per le altre route
+    └── vieux-port/          → Mini Vieux-Port de Marseille in 3D (TUTTO A PUNTI)
+        ├── index.tsx        → root: makeCircleTexture(), auto-rotation, scale=0.30
+        ├── Water.tsx        → 48×72 grid, 4 onde Gerstner, colori animati/frame
+        ├── Quays.tsx        → moli con punti grigi
+        ├── Boats.tsx        → 13 barche: scafo curvo + coperta + cabina + albero
+        │                      Alcune con vela (randa + fiocco), tutte || al molo
+        │                      Bobbing animation in useFrame
+        ├── Ground.tsx       → SOLO banchine (X=±1.42..±1.52) + alberi + lampioni
+        │                      NO piano esteso oltre il mare
+        ├── Forts.tsx        → Fort Saint-Jean + Fort Saint-Nicolas + MuCEM
+        ├── Lighting.tsx     → luci puntuali colorate
+        └── buildings/       → Edifici modulari (TUTTO A PUNTI)
+            ├── shared.ts    → BuildingSpec, FACADE_PALETTE (7 colori), SHUTTER_COLORS
+            │                  generateLayout() → 2 file × 2 lati (26 edifici)
+            ├── index.tsx    → assembler: Wall+Cornices+Arcade+Balconies+Windows
+            │                  +Shutters+Roof+Chimneys+Dormers+LePanier
+            ├── LePanier.tsx → quartiere storico nord-ovest + colle verde
+            ├── structure/
+            │   ├── Wall.tsx     → corpi per piano con depth/floor fade
+            │   ├── Cornices.tsx → cornicioni haussmanniani tra piani
+            │   └── Arcade.tsx   → arcate al piano terra con ombra interna
+            ├── details/
+            │   ├── Balconies.tsx → lastra + ringhiera ferro, ogni piano
+            │   ├── Windows.tsx   → 3×3 grid per finestra, sfarfallio animato
+            │   └── Shutters.tsx  → persiane aperte/chiuse, colori tipici
+            └── rooftop/
+                ├── Roof.tsx      → tetto mansardato ardesia + zinco
+                ├── Chimneys.tsx  → camini mattoni con cappello
+                └── Dormers.tsx   → abbaini con finestrino
+
+--- Tecnica punti (Three.js Points) ---
+- Ogni componente: useMemo (geometry) + BufferGeometry + BufferAttribute
+- PointsMaterial: map=circleTex, alphaTest=0.1, vertexColors, sizeAttenuation
+- circleTex: canvas gradient radiale 64×64 → CanvasTexture (texture circolare)
+- Colors animati (Water, Windows): needsUpdate=true in useFrame
+- TUTTO a punti — nessun Mesh/MeshStandardMaterial
+
+--- API (src/api/engine.ts) ---
+- BASE: http://localhost:8000
+- fetchWithTimeout(url, signal?): AbortController interno 5000ms + signal esterno
+- fetchRoute/fetchRisk/fetchUHIPoint: tutti accettano optional AbortSignal
+- heatmap.tsx useEffect: AbortController + cleanup → niente richieste orphan
+
+--- Guard anti-loop ---
+navigatingRef in index.tsx e routes.tsx: se navigatingRef.current=true → return immediato
+Previene chiamate concorrenti a calculateFromDemo (causa principale del GET loop)
 
 ================================================================================
 DESIGN SYSTEM (shared)
@@ -227,9 +275,9 @@ make run             # solo API             → :8000
 
 # Test API
 curl http://localhost:8000/health
-curl "http://localhost:8000/uhi/raster/raw?scale=0.3" -I    # headers float32
-curl "http://localhost:8000/uhi/raster/all-zones-history"   # anomalie 2000-2024
-curl "http://localhost:8000/timeline/snapshot?year=2003"    # heatwave year
+curl "http://localhost:8000/uhi/raster/raw?scale=0.3" -I
+curl "http://localhost:8000/uhi/raster/all-zones-history"
+curl "http://localhost:8000/timeline/snapshot?year=2003"
 
 # npm su 42
 npm_config_cache=/goinfre/eielmini/.npm-cache npm install <pkg>
@@ -239,17 +287,19 @@ GIT
 ================================================================================
 
 Remote: git@github.com:Emanuelee00/green_site.git
-Branch: emanuele
-Ultimo push: 2026-06-08
+Branch: dev (main branch: main)
+Ultimo push: 2026-06-10
 
 ================================================================================
 PROSSIMI STEP SUGGERITI
 ================================================================================
 
-1. Per-pixel zone coloring nel WebGL shader (attualmente usa media città)
+1. Trovare causa root del GET loop su /route/ (oltre il guard navigatingRef)
+   → Potrebbe essere onClick Three.js su VieuxPortOrb che bypassa pointerEvents
+2. Per-pixel zone coloring nel WebGL shader
    → Passare zona mask come texture RGBA (1 byte/pixel) e lookup anomalia per zona
-2. App mobile: aggiungere react-native-maps per vedere il percorso sulla mappa
-3. Le altre 3 app: heat risk alerts, valutazione immobiliare, piattaforma educativa
-4. Docker: testare build e deploy su VPS
-5. Play Store: configurare EAS build + account Expo
+3. App mobile: aggiungere react-native-maps per vedere il percorso sulla mappa
+4. Le altre 3 app: heat risk alerts, valutazione immobiliare, piattaforma educativa
+5. Docker: testare build e deploy su VPS
+6. Play Store: configurare EAS build + account Expo
 ================================================================================

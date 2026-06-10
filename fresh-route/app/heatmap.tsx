@@ -3,6 +3,8 @@ import {
   View, Text, StyleSheet, FlatList,
   TouchableOpacity, ActivityIndicator,
 } from "react-native";
+import { useRouter } from "expo-router";
+import { SafeAreaView } from "react-native-safe-area-context";
 import { fetchRisk } from "@/api/engine";
 import type { RiskFeature } from "@/types";
 
@@ -15,28 +17,34 @@ const RISK_STYLE: Record<string, { color: string; emoji: string }> = {
 };
 
 export default function HeatmapScreen() {
+  const router = useRouter();
   const [month, setMonth] = useState(new Date().getMonth() + 1);
   const [features, setFeatures] = useState<RiskFeature[]>([]);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    const ctrl = new AbortController();
     setLoading(true);
-    fetchRisk(month)
+    fetchRisk(month, ctrl.signal)
       .then((d) => {
         const sorted = [...d.features].sort(
           (a, b) => b.properties.uhi_score - a.properties.uhi_score
         );
         setFeatures(sorted);
       })
-      .catch(console.error)
+      .catch((e) => { if (e?.name !== "AbortError") console.error(e); })
       .finally(() => setLoading(false));
+    return () => ctrl.abort();
   }, [month]);
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
 
       {/* Month selector */}
       <View style={styles.monthBar}>
+        <TouchableOpacity onPress={() => router.replace("/")} style={styles.backBtn}>
+          <Text style={styles.backText}>← Back</Text>
+        </TouchableOpacity>
         <TouchableOpacity onPress={() => setMonth((m) => Math.max(1, m - 1))}>
           <Text style={styles.arrow}>‹</Text>
         </TouchableOpacity>
@@ -73,7 +81,7 @@ export default function HeatmapScreen() {
           }}
         />
       )}
-    </View>
+    </SafeAreaView>
   );
 }
 
@@ -81,9 +89,11 @@ const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: "#f0fdf4" },
   monthBar: {
     flexDirection: "row", alignItems: "center", justifyContent: "center",
-    gap: 24, paddingVertical: 14, backgroundColor: "#fff",
+    gap: 16, paddingVertical: 14, paddingHorizontal: 16, backgroundColor: "#fff",
     borderBottomWidth: 1, borderBottomColor: "#d1fae5",
   },
+  backBtn:  { marginRight: 8 },
+  backText: { fontSize: 14, color: "#6b7280" },
   arrow: { fontSize: 28, color: "#16a34a", fontWeight: "300" },
   monthLabel: { fontSize: 18, fontWeight: "700", color: "#166534", width: 50, textAlign: "center" },
   list: { padding: 16, gap: 10 },
