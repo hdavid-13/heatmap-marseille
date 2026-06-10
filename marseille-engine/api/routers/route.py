@@ -10,6 +10,47 @@ from core.raster_query import sample_point, uhi_to_label
 router = APIRouter()
 
 
+@router.get("/fastest")
+def get_fastest_route(
+    request: Request,
+    from_lat: float = Query(...),
+    from_lon: float = Query(...),
+    to_lat: float = Query(...),
+    to_lon: float = Query(...),
+):
+    """Returns the shortest-distance route (no UHI penalty)."""
+    t0 = time.time()
+
+    G = graph_builder.get()
+    if G is None:
+        raise HTTPException(status_code=503, detail="Graph not ready")
+
+    try:
+        src = _nearest_node(G, from_lat, from_lon)
+        dst = _nearest_node(G, to_lat, to_lon)
+        path = nx.astar_path(G, src, dst, heuristic=_geo_heuristic(G), weight="length")
+    except nx.NetworkXNoPath:
+        raise HTTPException(status_code=404, detail="No path found")
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+    geojson = _path_to_geojson(G, path)
+    distance_m = _path_distance_m(G, path)
+
+    loader = request.app.state.loader
+    uhi_avg = _avg_uhi(G, path, loader.raster_data, loader.raster_transform)
+    fresh_score = round(1.0 - uhi_avg, 3) if uhi_avg is not None else None
+
+    return {
+        "geometry": geojson,
+        "distance_m": round(distance_m, 1),
+        "uhi_avg": round(uhi_avg, 3) if uhi_avg is not None else None,
+        "fresh_score": fresh_score,
+        "label": uhi_to_label(uhi_avg) if uhi_avg is not None else None,
+        "took_s": round(time.time() - t0, 2),
+    }
+
+
 @router.get("/")
 def get_fresh_route(
     request: Request,
