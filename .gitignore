@@ -2,3 +2,6 @@ Browser_images/*
 .Rproj.user
 .positai
 .venv
+Makefile.local
+.env.local
+marseille-engine/cache/

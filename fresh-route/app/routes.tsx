@@ -32,13 +32,14 @@ export default function RoutesScreen() {
 
   return (
     <SafeAreaView style={styles.safe}>
+      <View style={styles.shell}>
       {/* Header */}
       <View style={styles.header}>
         <TouchableOpacity onPress={() => router.replace("/")} style={styles.backBtn}>
-          <Text style={styles.backText}>← Back</Text>
+          <Text style={styles.backText}>← Retour</Text>
         </TouchableOpacity>
-        <Text style={styles.title}>Popular routes</Text>
-        <Text style={styles.subtitle}>Tap to calculate the freshest path</Text>
+        <Text style={styles.title}>Parcours populaires</Text>
+        <Text style={styles.subtitle}>Touchez pour calculer le trajet le plus frais</Text>
       </View>
 
       {/* Route cards */}
@@ -56,12 +57,14 @@ export default function RoutesScreen() {
         ))}
         <View style={{ height: 32 }} />
       </ScrollView>
+      </View>
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   safe:     { flex: 1, backgroundColor: colors.bg },
+  shell:    { flex: 1, width: "100%", maxWidth: 640, alignSelf: "center" },
   header:   { paddingHorizontal: 24, paddingTop: 16, paddingBottom: 20, gap: 4 },
   backBtn:  { marginBottom: 12 },
   backText: { color: colors.textSub, fontSize: 14 },

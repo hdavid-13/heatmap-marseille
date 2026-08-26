@@ -5,7 +5,7 @@ import { Water }     from "./Water";
 import { Quays }     from "./Quays";
 import { Buildings } from "./buildings";
 import { Forts }     from "./Forts";
-import { Boats }     from "./Boats";
+import { Boats }     from "./boats";
 import { Ground }    from "./Ground";
 import { Lighting }  from "./Lighting";
 

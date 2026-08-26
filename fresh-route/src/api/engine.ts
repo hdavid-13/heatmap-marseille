@@ -1,6 +1,6 @@
 import type { RouteResponse, UHIPoint, RiskCollection } from "../types";
 
-const BASE = "http://localhost:8000";
+const BASE = process.env.EXPO_PUBLIC_ENGINE_URL ?? "https://marseille-engine.92-4-217-42.sslip.io";
 const TIMEOUT_MS = 5000;
 
 function fetchWithTimeout(url: string, signal?: AbortSignal): Promise<Response> {

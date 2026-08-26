@@ -4,6 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { StatCard } from "@/components/ui/StatCard";
 import { HeatBadge } from "@/components/ui/HeatBadge";
 import { FreshScoreBar } from "@/components/ui/FreshScoreBar";
+import RouteMapView from "@/components/routes/RouteMapView";
 import { colors, heat } from "@/theme";
 import type { RouteResponse } from "@/types";
 
@@ -18,60 +19,64 @@ export default function RouteDetailScreen() {
   const distKm    = (route.distance_m / 1000).toFixed(2);
   const walkMin   = Math.round(route.distance_m / 80);
   const coords    = route.geometry?.coordinates ?? [];
+  const [fromLabel, toLabel] = (name ?? "").split(" → ");
+  const first = coords[0], last = coords[coords.length - 1];
 
   return (
     <SafeAreaView style={styles.safe}>
+      <View style={styles.shell}>
       <ScrollView showsVerticalScrollIndicator={false}>
 
         {/* Hero band */}
         <View style={[styles.heroBand, { backgroundColor: h.bg }]}>
           <TouchableOpacity onPress={() => router.back()} style={styles.backBtn}>
-            <Text style={styles.backText}>← Routes</Text>
+            <Text style={styles.backText}>← Parcours</Text>
           </TouchableOpacity>
           <HeatBadge label={label} />
           <Text style={styles.routeName}>{name}</Text>
           <Text style={styles.routeDesc}>
-            {label === "cool" ? "Low heat exposure — ideal for summer walks."
-             : label === "warm" ? "Moderate heat — carry water."
-             : "High heat exposure — avoid midday."}
+            {label === "cool" ? "Faible exposition à la chaleur — idéal pour les balades d’été."
+             : label === "warm" ? "Exposition modérée — prévoyez de l’eau."
+             : "Forte exposition à la chaleur — évitez le milieu de journée."}
           </Text>
         </View>
 
         <View style={styles.content}>
           {/* Stats grid */}
           <View style={styles.statsGrid}>
-            <StatCard label="Distance" value={`${distKm} km`} sub={`~${walkMin} min walk`} />
-            <StatCard label="Fresh" value={`${freshPct}%`} sub="vs city avg" valueColor={h.color} />
-          </View>
-          <View style={styles.statsGrid}>
-            <StatCard
-              label="Heat index"
-              value={`${Math.round((route.uhi_avg ?? 0) * 100)}%`}
-              sub="UHI exposure"
-              valueColor={(route.uhi_avg ?? 0) > 0.6 ? colors.hot : (route.uhi_avg ?? 0) > 0.35 ? colors.warm : colors.primary}
-            />
-            <StatCard label="Algorithm" value="A★" sub="green-weighted" />
+            <View style={styles.statCell}><StatCard label="Distance" value={`${distKm} km`} sub={`~${walkMin} min à pied`} /></View>
+            <View style={styles.statCell}><StatCard label="Fraîcheur" value={`${freshPct}%`} sub="vs moyenne ville" valueColor={h.color} /></View>
+            <View style={styles.statCell}>
+              <StatCard
+                label="Indice de chaleur"
+                value={`${Math.round((route.uhi_avg ?? 0) * 100)}%`}
+                sub="exposition ICU"
+                valueColor={(route.uhi_avg ?? 0) > 0.6 ? colors.hot : (route.uhi_avg ?? 0) > 0.35 ? colors.warm : colors.primary}
+              />
+            </View>
+            <View style={styles.statCell}><StatCard label="Algorithme" value="Dijkstra" sub="pondéré végétation" /></View>
           </View>
 
           {/* Score bar */}
           <View style={styles.card}>
-            <Text style={styles.cardLabel}>Heat exposure along route</Text>
+            <Text style={styles.cardLabel}>Exposition à la chaleur sur le trajet</Text>
             <FreshScoreBar score={route.fresh_score ?? 0} heatLabel={label} color={h.color} />
             <View style={styles.barLegend}>
-              <Text style={styles.barLegendText}>🔥 Hot</Text>
-              <Text style={styles.barLegendText}>🌿 Fresh</Text>
+              <Text style={styles.barLegendText}>🔥 Chaud</Text>
+              <Text style={styles.barLegendText}>🌿 Frais</Text>
             </View>
           </View>
 
-          {/* Route path preview */}
-          {coords.length > 1 && (
-            <View style={styles.card}>
-              <Text style={styles.cardLabel}>Route path  ({coords.length} points)</Text>
-              <RoutePathSVG coords={coords} color={h.color} />
-              <View style={styles.barLegend}>
-                <Text style={styles.barLegendText}>Start</Text>
-                <Text style={styles.barLegendText}>End</Text>
-              </View>
+          {/* Real map */}
+          {coords.length > 1 && first && last && (
+            <View style={[styles.card, styles.mapCard]}>
+              <Text style={styles.cardLabel}>Tracé du parcours  ({coords.length} points)</Text>
+              <RouteMapView
+                from={{ lat: first[1], lon: first[0], label: fromLabel || "Départ" }}
+                to={{ lat: last[1], lon: last[0], label: toLabel || "Arrivée" }}
+                coords={coords}
+                color={h.color}
+              />
             </View>
           )}
         </View>
@@ -80,58 +85,25 @@ export default function RouteDetailScreen() {
         <View style={styles.ctaWrap}>
           <TouchableOpacity
             style={[styles.ctaBtn, { backgroundColor: h.color, shadowColor: h.color }]}
-            onPress={() => Alert.alert("Inizia Percorso", "Navigation feature coming soon!")}
+            onPress={() => Alert.alert("Navigation pas à pas", "Le guidage en temps réel arrive bientôt.")}
             activeOpacity={0.88}
           >
-            <Text style={styles.ctaBtnText}>Inizia Percorso  →</Text>
+            <Text style={styles.ctaBtnText}>Démarrer l’itinéraire  →</Text>
           </TouchableOpacity>
           {route.took_s > 0 && (
-            <Text style={styles.calcNote}>Calculated in {route.took_s}s · A★ algorithm</Text>
+            <Text style={styles.calcNote}>Calculé en {route.took_s}s · algorithme Dijkstra</Text>
           )}
         </View>
 
       </ScrollView>
-    </SafeAreaView>
-  );
-}
-
-// ── Mini SVG path preview ────────────────────────────────────────────────────
-function RoutePathSVG({ coords, color }: { coords: [number, number][]; color: string }) {
-  const sample = coords.filter((_, i) => i % Math.max(1, Math.floor(coords.length / 40)) === 0);
-  const lons = sample.map((c) => c[0]);
-  const lats = sample.map((c) => c[1]);
-  const minLon = Math.min(...lons), maxLon = Math.max(...lons);
-  const minLat = Math.min(...lats), maxLat = Math.max(...lats);
-  const W = 280, H = 70;
-
-  const pts = sample.map((c) => {
-    const x = maxLon === minLon ? W / 2 : ((c[0] - minLon) / (maxLon - minLon)) * (W - 20) + 10;
-    const y = maxLat === minLat ? H / 2 : (H - 10) - ((c[1] - minLat) / (maxLat - minLat)) * (H - 20);
-    return `${x},${y}`;
-  }).join(" ");
-
-  // react-native-svg not installed — use a simple View-based bar chart as fallback
-  return (
-    <View style={{ height: 70, justifyContent: "center", alignItems: "center" }}>
-      <View style={{ flexDirection: "row", alignItems: "flex-end", gap: 2, height: 60 }}>
-        {sample.slice(0, 30).map((c, i) => {
-          const lat = maxLat === minLat ? 0.5 : (c[1] - minLat) / (maxLat - minLat);
-          const h = 8 + lat * 44;
-          return (
-            <View key={i} style={{
-              width: 6, height: h, borderRadius: 3,
-              backgroundColor: color,
-              opacity: 0.4 + lat * 0.6,
-            }} />
-          );
-        })}
       </View>
-    </View>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   safe:      { flex: 1, backgroundColor: colors.bg },
+  shell:     { flex: 1, width: "100%", maxWidth: 860, alignSelf: "center" },
   heroBand:  { padding: 24, paddingTop: 20, gap: 10 },
   backBtn:   { marginBottom: 6 },
   backText:  { color: colors.textSub, fontSize: 14 },
@@ -139,12 +111,14 @@ const styles = StyleSheet.create({
   routeDesc: { fontSize: 14, color: colors.textSub, lineHeight: 20 },
 
   content:   { padding: 16, gap: 12 },
-  statsGrid: { flexDirection: "row", gap: 12 },
+  statsGrid: { flexDirection: "row", flexWrap: "wrap", gap: 12 },
+  statCell:  { flexGrow: 1, flexBasis: 140, minWidth: 140 },
 
   card: {
     backgroundColor: colors.card, borderRadius: 16,
     borderWidth: 1, borderColor: colors.cardBorder, padding: 16, gap: 12,
   },
+  mapCard: { height: 380, padding: 12 },
   cardLabel: { fontSize: 12, color: colors.textDim, textTransform: "uppercase", letterSpacing: 0.8 },
   barLegend: { flexDirection: "row", justifyContent: "space-between" },
   barLegendText: { fontSize: 11, color: colors.textDim },

@@ -331,3 +331,870 @@
 {"_e":"metro:client_log","_t":1780923066675,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
 {"_e":"metro:client_log","_t":1780923066758,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
 {"_e":"metro:client_log","_t":1780923066838,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"root:init","_t":1787739873890,"format":"v0-jsonl","version":"56.1.14"}
+{"_e":"env:mode","_t":1787739873890,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1787739873893,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1787739874230,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1787739874799,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1787739879607,"atlas":false,"workers":3,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1787740269477,"id":"1","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:done","_t":1787740280759,"id":"1","total":896,"ms":11281.884014}
+{"_e":"metro:bundling:started","_t":1787740286268,"id":"2","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:done","_t":1787740286327,"id":"2","total":1,"ms":58.907576}
+{"_e":"metro:client_log","_t":1787740286876,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787740286877,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787740286877,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787740286887,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787740286983,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787740294738,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:client_log","_t":1787740297736,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787740310801,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:client_log","_t":1787740318352,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787740323155,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:client_log","_t":1787740324920,"level":"error","data":["[TypeError: Failed to fetch]"]}
+{"_e":"metro:client_log","_t":1787740326653,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:bundling:started","_t":1787740899430,"id":"d","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:done","_t":1787740899492,"id":"d","total":1,"ms":61.441704}
+{"_e":"metro:client_log","_t":1787740900043,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787740900043,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787740900043,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787740900050,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787740900152,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787740913791,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:client_log","_t":1787740915452,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787740917211,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:client_log","_t":1787740917907,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:bundling:started","_t":1787740999635,"id":"j","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:done","_t":1787740999694,"id":"j","total":1,"ms":59.113101}
+{"_e":"metro:bundling:started","_t":1787741000314,"id":"k","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:done","_t":1787741000376,"id":"k","total":1,"ms":61.721625}
+{"_e":"metro:client_log","_t":1787741001801,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787741001801,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787741001801,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787741001801,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787741005743,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787741005743,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787741005743,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787741005743,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:bundling:started","_t":1787741942251,"id":"o","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:done","_t":1787741942311,"id":"o","total":1,"ms":60.173903}
+{"_e":"metro:bundling:started","_t":1787741944973,"id":"p","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:started","_t":1787742064121,"id":"q","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:done","_t":1787742064185,"id":"q","total":1,"ms":63.710349}
+{"_e":"root:init","_t":1787743898440,"format":"v0-jsonl","version":"56.1.14"}
+{"_e":"env:mode","_t":1787743898441,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1787743898443,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1787743898697,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1787743898973,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1787743903559,"atlas":false,"workers":3,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1787743904398,"id":"1","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1787743904398,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1787743904407,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1787743904507,"id":"1","progress":0.06323313156184808,"total":171,"current":43}
+{"_e":"metro:bundling:progress","_t":1787743904607,"id":"1","progress":0.1872528925619835,"total":275,"current":119}
+{"_e":"metro:bundling:progress","_t":1787743904708,"id":"1","progress":0.3594572183206732,"total":442,"current":265}
+{"_e":"metro:bundling:progress","_t":1787743904807,"id":"1","progress":0.5094920034477611,"total":573,"current":409}
+{"_e":"metro:bundling:progress","_t":1787743904938,"id":"1","progress":0.7866465701083101,"total":681,"current":604}
+{"_e":"metro:bundling:progress","_t":1787743905037,"id":"1","progress":0.9026317662516039,"total":721,"current":685}
+{"_e":"metro:bundling:progress","_t":1787743905137,"id":"1","progress":0.9198877848564834,"total":807,"current":774}
+{"_e":"metro:bundling:progress","_t":1787743905237,"id":"1","progress":0.9977181981193052,"total":876,"current":875}
+{"_e":"metro:bundling:progress","_t":1787743905401,"id":"1","progress":0.9977181981193052,"total":876,"current":875}
+{"_e":"metro:bundling:progress","_t":1787743905429,"id":"1","progress":0.999,"total":876,"current":876}
+{"_e":"metro:bundling:progress","_t":1787743905530,"id":"1","progress":0.999,"total":907,"current":899}
+{"_e":"metro:bundling:progress","_t":1787743905639,"id":"1","progress":0.999,"total":907,"current":904}
+{"_e":"metro:bundling:progress","_t":1787743905750,"id":"1","progress":0.999,"total":907,"current":905}
+{"_e":"metro:bundling:progress","_t":1787743905999,"id":"1","progress":0.999,"total":907,"current":905}
+{"_e":"metro:bundling:progress","_t":1787743906000,"id":"1","progress":0.999,"total":907,"current":905}
+{"_e":"metro:bundling:progress","_t":1787743906027,"id":"1","progress":0.999,"total":907,"current":906}
+{"_e":"metro:bundling:done","_t":1787743906114,"id":"1","total":907,"ms":1716.247562}
+{"_e":"metro:client_log","_t":1787743907016,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787743907017,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787743907017,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787743907017,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:bundling:started","_t":1787744007536,"id":"5","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1787744007536,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1787744007602,"id":"5","total":1,"ms":65.078151}
+{"_e":"metro:client_log","_t":1787744008129,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787744008130,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787744008131,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787744008141,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787744008255,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787744012814,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:client_log","_t":1787744013800,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787744041676,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:client_log","_t":1787744042896,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787744218033,"level":"warn","data":["An error occurred in the <CanvasImpl> component.\n\nConsider adding an error boundary to your tree to customize error handling behavior.\nVisit https://react.dev/link/error-boundaries to learn more about error boundaries.\n"]}
+{"_e":"metro:client_log","_t":1787744218931,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:bundling:started","_t":1787744334583,"id":"p","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1787744334584,"id":"p","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1787744334646,"id":"p","total":1,"ms":62.073305}
+{"_e":"metro:client_log","_t":1787744336107,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787744336108,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787744336108,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787744336108,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787744336158,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:bundling:started","_t":1787745184663,"id":"s","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1787745184663,"id":"s","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1787745184724,"id":"s","total":1,"ms":60.954103}
+{"_e":"metro:client_log","_t":1787745185248,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787745185250,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787745185250,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787745185258,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787745185363,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787745188486,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:client_log","_t":1787745189598,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:bundling:started","_t":1787745699601,"id":"y","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1787745699601,"id":"y","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1787745699663,"id":"y","total":1,"ms":61.416264}
+{"_e":"metro:client_log","_t":1787745700142,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787745700142,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787745700144,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787745700158,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787745700254,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787745702698,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:client_log","_t":1787745703854,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:bundling:failed","_t":1787745805711,"id":null,"message":"Unable to resolve \"./Cliffs\" from \"src/components/scene/orbs/calanques/index.tsx\"\n  3 | import * as THREE from \"three\";\n  4 | import { CalanqueWater } from \"./Water\";\n> 5 | import { Cliffs } from \"./Cliffs\";\n    |                         ^\n  6 | import { Pines } from \"./Pines\";\n  7 | import { Shore } from \"./Shore\";\n  8 | import { Details } from \"./Details\";","importStack":"Import stack:\n\n src/components/scene/orbs/calanques/index.tsx\n | import \"./Cliffs\"\n\n src/components/scene/RouteOrb.tsx\n | import \"./orbs/calanques\"\n\n src/components/scene/RouteCarouselScene.tsx\n | import \"./RouteOrb\"\n\n app/index.tsx\n | import \"@/components/scene/RouteCarouselScene\"\n\n app (require.context)\n","filename":null,"targetModuleName":"./Cliffs","originModulePath":"src/components/scene/orbs/calanques/index.tsx"}
+{"_e":"metro:bundling:started","_t":1787745871738,"id":"18","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1787745871738,"id":"18","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1787745871799,"id":"18","total":1,"ms":61.121904}
+{"_e":"metro:bundling:started","_t":1787745871983,"id":"19","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1787745871983,"id":"19","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1787745872050,"id":"19","total":1,"ms":66.304433}
+{"_e":"metro:client_log","_t":1787745872352,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787745872353,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787745872372,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787745872461,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787745872566,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787745872567,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787745872567,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787745872587,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:bundling:started","_t":1787745915175,"id":"1e","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1787745915175,"id":"1e","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1787745915236,"id":"1e","total":1,"ms":60.607344}
+{"_e":"metro:client_log","_t":1787745915752,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787745915752,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787745915753,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787745915762,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787745915865,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787745917783,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:client_log","_t":1787745918806,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787745991379,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:bundling:failed","_t":1787745992164,"id":null,"message":"Unable to resolve \"./Coast\" from \"src/components/scene/orbs/corniche/index.tsx\"\n  3 | import * as THREE from \"three\";\n  4 | import { Sea } from \"./Sea\";\n> 5 | import { Coast } from \"./Coast\";\n    |                        ^\n  6 | import { CornicheRoad } from \"./Road\";\n  7 | import { Buildings } from \"./Buildings\";\n  8 | import { Details } from \"./Details\";","importStack":"Import stack:\n\n src/components/scene/orbs/corniche/index.tsx\n | import \"./Coast\"\n\n src/components/scene/RouteOrb.tsx\n | import \"./orbs/corniche\"\n\n src/components/scene/RouteCarouselScene.tsx\n | import \"./RouteOrb\"\n\n app/index.tsx\n | import \"@/components/scene/RouteCarouselScene\"\n\n app (require.context)\n","filename":null,"targetModuleName":"./Coast","originModulePath":"src/components/scene/orbs/corniche/index.tsx"}
+{"_e":"metro:bundling:started","_t":1787746051637,"id":"1n","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1787746051637,"id":"1n","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1787746051698,"id":"1n","total":1,"ms":61.176304}
+{"_e":"metro:client_log","_t":1787746052228,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787746052229,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787746052230,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:bundling:started","_t":1787746086282,"id":"1s","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1787746086283,"id":"1s","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1787746086345,"id":"1s","total":1,"ms":62.915867}
+{"_e":"metro:client_log","_t":1787746086879,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787746086879,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787746086879,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787746086887,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787746086983,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787746089200,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:client_log","_t":1787746090426,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787746093168,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:client_log","_t":1787746094430,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787746098235,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:client_log","_t":1787746099072,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:bundling:failed","_t":1787746160296,"id":null,"message":"Unable to resolve \"./orbs/notre-dame-de-la-garde\" from \"src/components/scene/RouteOrb.tsx\"\n  13 |\n  14 | import { VieuxPortOrb } from \"./orbs/vieux-port\";\n> 15 | import { NotreDameDeLaGardeOrb } from \"./orbs/notre-dame-de-la-garde\";\n     |                                        ^\n  16 | import { CalanquesOrb } from \"./orbs/calanques\";\n  17 | import { CornicheOrb } from \"./orbs/corniche\";\n  18 | import { GenericOrb }   from \"./orbs/GenericOrb\";","importStack":"Import stack:\n\n src/components/scene/RouteOrb.tsx\n | import \"./orbs/notre-dame-de-la-garde\"\n\n src/components/scene/RouteCarouselScene.tsx\n | import \"./RouteOrb\"\n\n app/index.tsx\n | import \"@/components/scene/RouteCarouselScene\"\n\n app (require.context)\n","filename":null,"targetModuleName":"./orbs/notre-dame-de-la-garde","originModulePath":"src/components/scene/RouteOrb.tsx"}
+{"_e":"metro:bundling:failed","_t":1787746198622,"id":null,"message":"Unable to resolve \"./Fort\" from \"src/components/scene/orbs/notre-dame-de-la-garde/index.tsx\"\n  3 | import * as THREE from \"three\";\n  4 | import { Hill } from \"./Hill\";\n> 5 | import { Fort } from \"./Fort\";\n    |                       ^\n  6 | import { Basilica } from \"./Basilica\";\n  7 | import { BellTower } from \"./BellTower\";\n  8 | import { Madonna } from \"./Madonna\";","importStack":"Import stack:\n\n src/components/scene/orbs/notre-dame-de-la-garde/index.tsx\n | import \"./Fort\"\n\n src/components/scene/RouteOrb.tsx\n | import \"./orbs/notre-dame-de-la-garde\"\n\n src/components/scene/RouteCarouselScene.tsx\n | import \"./RouteOrb\"\n\n app/index.tsx\n | import \"@/components/scene/RouteCarouselScene\"\n\n app (require.context)\n","filename":null,"targetModuleName":"./Fort","originModulePath":"src/components/scene/orbs/notre-dame-de-la-garde/index.tsx"}
+{"_e":"metro:bundling:failed","_t":1787746232958,"id":null,"message":"Unable to resolve \"./Madonna\" from \"src/components/scene/orbs/notre-dame-de-la-garde/index.tsx\"\n   6 | import { Basilica } from \"./Basilica\";\n   7 | import { BellTower } from \"./BellTower\";\n>  8 | import { Madonna } from \"./Madonna\";\n     |                          ^\n   9 | import { circleTexture } from \"./geometry\";\n  10 |\n  11 | interface Props { isActive: boolean; onTap?: () => void; color?: string }","importStack":"Import stack:\n\n src/components/scene/orbs/notre-dame-de-la-garde/index.tsx\n | import \"./Madonna\"\n\n src/components/scene/RouteOrb.tsx\n | import \"./orbs/notre-dame-de-la-garde\"\n\n src/components/scene/RouteCarouselScene.tsx\n | import \"./RouteOrb\"\n\n app/index.tsx\n | import \"@/components/scene/RouteCarouselScene\"\n\n app (require.context)\n","filename":null,"targetModuleName":"./Madonna","originModulePath":"src/components/scene/orbs/notre-dame-de-la-garde/index.tsx"}
+{"_e":"root:init","_t":1787746278760,"format":"v0-jsonl","version":"56.1.14"}
+{"_e":"env:mode","_t":1787746278761,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1787746278763,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1787746279022,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1787746279298,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1787746283948,"atlas":false,"workers":3,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1787746284795,"id":"1","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1787746284796,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1787746284801,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1787746285210,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1787746285228,"id":"1","progress":0.010000000000000002,"total":1,"current":1}
+{"_e":"metro:bundling:progress","_t":1787746285328,"id":"1","progress":0.36,"total":10,"current":6}
+{"_e":"metro:bundling:progress","_t":1787746285429,"id":"1","progress":0.4444444444444444,"total":12,"current":8}
+{"_e":"metro:bundling:progress","_t":1787746285535,"id":"1","progress":0.5625,"total":12,"current":9}
+{"_e":"metro:bundling:progress","_t":1787746285638,"id":"1","progress":0.5625,"total":18,"current":9}
+{"_e":"metro:bundling:progress","_t":1787746285647,"id":"1","progress":0.5625,"total":18,"current":10}
+{"_e":"metro:bundling:progress","_t":1787746285748,"id":"1","progress":0.5625,"total":28,"current":18}
+{"_e":"metro:bundling:progress","_t":1787746285774,"id":"1","progress":0.5625,"total":28,"current":18}
+{"_e":"metro:bundling:progress","_t":1787746285835,"id":"1","progress":0.5625,"total":28,"current":18}
+{"_e":"metro:bundling:progress","_t":1787746285855,"id":"1","progress":0.5625,"total":32,"current":20}
+{"_e":"metro:bundling:progress","_t":1787746285955,"id":"1","progress":0.5625,"total":41,"current":25}
+{"_e":"metro:bundling:progress","_t":1787746286055,"id":"1","progress":0.5625,"total":53,"current":32}
+{"_e":"metro:bundling:progress","_t":1787746286155,"id":"1","progress":0.5625,"total":80,"current":40}
+{"_e":"metro:bundling:progress","_t":1787746286257,"id":"1","progress":0.5625,"total":147,"current":49}
+{"_e":"metro:bundling:progress","_t":1787746286359,"id":"1","progress":0.5625,"total":163,"current":61}
+{"_e":"metro:bundling:progress","_t":1787746286459,"id":"1","progress":0.5625,"total":206,"current":73}
+{"_e":"metro:bundling:progress","_t":1787746286559,"id":"1","progress":0.5625,"total":247,"current":91}
+{"_e":"metro:bundling:progress","_t":1787746286659,"id":"1","progress":0.5625,"total":263,"current":112}
+{"_e":"metro:bundling:progress","_t":1787746286759,"id":"1","progress":0.5625,"total":277,"current":121}
+{"_e":"metro:bundling:progress","_t":1787746286860,"id":"1","progress":0.5625,"total":291,"current":132}
+{"_e":"metro:bundling:progress","_t":1787746286965,"id":"1","progress":0.5625,"total":294,"current":140}
+{"_e":"metro:bundling:progress","_t":1787746287065,"id":"1","progress":0.5625,"total":303,"current":145}
+{"_e":"metro:bundling:progress","_t":1787746287166,"id":"1","progress":0.5625,"total":309,"current":154}
+{"_e":"metro:bundling:progress","_t":1787746287266,"id":"1","progress":0.5625,"total":324,"current":165}
+{"_e":"metro:bundling:progress","_t":1787746287366,"id":"1","progress":0.5625,"total":329,"current":177}
+{"_e":"metro:bundling:progress","_t":1787746287468,"id":"1","progress":0.5625,"total":335,"current":187}
+{"_e":"metro:bundling:progress","_t":1787746287569,"id":"1","progress":0.5625,"total":370,"current":192}
+{"_e":"metro:bundling:progress","_t":1787746287670,"id":"1","progress":0.5625,"total":394,"current":198}
+{"_e":"metro:bundling:progress","_t":1787746287770,"id":"1","progress":0.5625,"total":413,"current":212}
+{"_e":"metro:bundling:progress","_t":1787746287870,"id":"1","progress":0.5625,"total":424,"current":226}
+{"_e":"metro:bundling:progress","_t":1787746287970,"id":"1","progress":0.5625,"total":427,"current":237}
+{"_e":"metro:bundling:progress","_t":1787746288070,"id":"1","progress":0.5625,"total":443,"current":249}
+{"_e":"metro:bundling:progress","_t":1787746288170,"id":"1","progress":0.5625,"total":454,"current":263}
+{"_e":"metro:bundling:progress","_t":1787746288270,"id":"1","progress":0.5625,"total":461,"current":275}
+{"_e":"metro:bundling:progress","_t":1787746288371,"id":"1","progress":0.5625,"total":464,"current":284}
+{"_e":"metro:bundling:progress","_t":1787746288481,"id":"1","progress":0.5625,"total":469,"current":295}
+{"_e":"metro:bundling:progress","_t":1787746288586,"id":"1","progress":0.5625,"total":477,"current":301}
+{"_e":"metro:bundling:progress","_t":1787746288687,"id":"1","progress":0.5625,"total":490,"current":306}
+{"_e":"metro:bundling:progress","_t":1787746288787,"id":"1","progress":0.5625,"total":494,"current":317}
+{"_e":"metro:bundling:progress","_t":1787746288892,"id":"1","progress":0.5625,"total":508,"current":328}
+{"_e":"metro:bundling:progress","_t":1787746288995,"id":"1","progress":0.5625,"total":509,"current":333}
+{"_e":"metro:bundling:progress","_t":1787746289096,"id":"1","progress":0.5625,"total":526,"current":344}
+{"_e":"metro:bundling:progress","_t":1787746289202,"id":"1","progress":0.5625,"total":529,"current":357}
+{"_e":"metro:bundling:progress","_t":1787746289302,"id":"1","progress":0.5625,"total":545,"current":367}
+{"_e":"metro:bundling:progress","_t":1787746289422,"id":"1","progress":0.5625,"total":552,"current":370}
+{"_e":"metro:bundling:progress","_t":1787746289522,"id":"1","progress":0.5625,"total":569,"current":405}
+{"_e":"metro:bundling:progress","_t":1787746289622,"id":"1","progress":0.5625,"total":585,"current":434}
+{"_e":"metro:bundling:progress","_t":1787746289723,"id":"1","progress":0.5625,"total":613,"current":458}
+{"_e":"metro:bundling:progress","_t":1787746289823,"id":"1","progress":0.5625,"total":632,"current":474}
+{"_e":"metro:bundling:progress","_t":1787746289923,"id":"1","progress":0.5683930975521074,"total":638,"current":481}
+{"_e":"metro:bundling:progress","_t":1787746290026,"id":"1","progress":0.5826618252572204,"total":638,"current":487}
+{"_e":"metro:bundling:progress","_t":1787746290129,"id":"1","progress":0.59338134765625,"total":640,"current":493}
+{"_e":"metro:bundling:progress","_t":1787746290229,"id":"1","progress":0.5987524368369431,"total":641,"current":496}
+{"_e":"metro:bundling:progress","_t":1787746290329,"id":"1","progress":0.6049382716049383,"total":648,"current":504}
+{"_e":"metro:bundling:progress","_t":1787746290439,"id":"1","progress":0.6223726914228599,"total":649,"current":512}
+{"_e":"metro:bundling:progress","_t":1787746290539,"id":"1","progress":0.6444452885914326,"total":649,"current":521}
+{"_e":"metro:bundling:progress","_t":1787746290641,"id":"1","progress":0.6698792899408283,"total":650,"current":532}
+{"_e":"metro:bundling:progress","_t":1787746290740,"id":"1","progress":0.680878091008318,"total":652,"current":538}
+{"_e":"metro:bundling:progress","_t":1787746290840,"id":"1","progress":0.6991315849337139,"total":653,"current":546}
+{"_e":"metro:bundling:progress","_t":1787746290945,"id":"1","progress":0.7050871161354233,"total":655,"current":550}
+{"_e":"metro:bundling:progress","_t":1787746291046,"id":"1","progress":0.7199265381083564,"total":660,"current":560}
+{"_e":"metro:bundling:progress","_t":1787746291146,"id":"1","progress":0.7218610435864097,"total":665,"current":565}
+{"_e":"metro:bundling:progress","_t":1787746291247,"id":"1","progress":0.7402199496794091,"total":666,"current":573}
+{"_e":"metro:bundling:progress","_t":1787746291353,"id":"1","progress":0.7461028541718957,"total":668,"current":577}
+{"_e":"metro:bundling:progress","_t":1787746291453,"id":"1","progress":0.7675620643746575,"total":678,"current":594}
+{"_e":"metro:bundling:progress","_t":1787746291553,"id":"1","progress":0.7767450432582659,"total":691,"current":609}
+{"_e":"metro:bundling:progress","_t":1787746291665,"id":"1","progress":0.8040711473027466,"total":697,"current":625}
+{"_e":"metro:bundling:progress","_t":1787746291767,"id":"1","progress":0.8040711473027466,"total":728,"current":638}
+{"_e":"metro:bundling:progress","_t":1787746291873,"id":"1","progress":0.8040711473027466,"total":733,"current":650}
+{"_e":"metro:bundling:progress","_t":1787746291972,"id":"1","progress":0.8175478663439456,"total":741,"current":670}
+{"_e":"metro:bundling:progress","_t":1787746292072,"id":"1","progress":0.8175478663439456,"total":749,"current":676}
+{"_e":"metro:bundling:progress","_t":1787746292172,"id":"1","progress":0.8376492259111441,"total":755,"current":691}
+{"_e":"metro:bundling:progress","_t":1787746292274,"id":"1","progress":0.8376492259111441,"total":774,"current":700}
+{"_e":"metro:bundling:progress","_t":1787746292374,"id":"1","progress":0.8376492259111441,"total":785,"current":704}
+{"_e":"metro:bundling:progress","_t":1787746292474,"id":"1","progress":0.8376492259111441,"total":785,"current":712}
+{"_e":"metro:bundling:progress","_t":1787746292625,"id":"1","progress":0.8376492259111441,"total":785,"current":715}
+{"_e":"metro:bundling:progress","_t":1787746292726,"id":"1","progress":0.8542240587695132,"total":792,"current":732}
+{"_e":"metro:bundling:progress","_t":1787746292826,"id":"1","progress":0.8591245437612957,"total":807,"current":748}
+{"_e":"metro:bundling:progress","_t":1787746292928,"id":"1","progress":0.8591245437612957,"total":833,"current":767}
+{"_e":"metro:bundling:progress","_t":1787746293032,"id":"1","progress":0.8591245437612957,"total":840,"current":778}
+{"_e":"metro:bundling:progress","_t":1787746293132,"id":"1","progress":0.8717009950360504,"total":844,"current":788}
+{"_e":"metro:bundling:progress","_t":1787746293232,"id":"1","progress":0.8753421013662117,"total":854,"current":799}
+{"_e":"metro:bundling:progress","_t":1787746293333,"id":"1","progress":0.9179379872906336,"total":859,"current":823}
+{"_e":"metro:bundling:progress","_t":1787746293433,"id":"1","progress":0.9179379872906336,"total":899,"current":839}
+{"_e":"metro:bundling:progress","_t":1787746293534,"id":"1","progress":0.9179379872906336,"total":901,"current":853}
+{"_e":"metro:bundling:progress","_t":1787746293633,"id":"1","progress":0.9413492267054359,"total":907,"current":880}
+{"_e":"metro:bundling:progress","_t":1787746293733,"id":"1","progress":0.9824756953143059,"total":909,"current":901}
+{"_e":"metro:bundling:progress","_t":1787746293834,"id":"1","progress":0.9934676277130514,"total":917,"current":914}
+{"_e":"metro:bundling:progress","_t":1787746293934,"id":"1","progress":0.9978201641358134,"total":917,"current":916}
+{"_e":"metro:bundling:progress","_t":1787746294873,"id":"1","progress":0.999,"total":917,"current":917}
+{"_e":"metro:bundling:done","_t":1787746295036,"id":"1","total":917,"ms":10240.852433}
+{"_e":"metro:bundling:started","_t":1787746663084,"id":"6","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1787746663084,"id":"6","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1787746663086,"id":"6","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1787746663188,"id":"6","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1787746663275,"id":"6","total":1,"ms":190.642669}
+{"_e":"metro:client_log","_t":1787746663799,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787746663799,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787746663800,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787746663807,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787746663930,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787746667581,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:client_log","_t":1787746668702,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:bundling:failed","_t":1787746799827,"id":null,"message":"Unable to resolve \"./Cliffs\" from \"src/components/scene/orbs/calanques/index.tsx\"\n  3 | import * as THREE from \"three\";\n  4 | import { CalanqueWater } from \"./Water\";\n> 5 | import { Cliffs } from \"./Cliffs\";\n    |                         ^\n  6 | import { Pines } from \"./Pines\";\n  7 | import { Shore } from \"./Shore\";\n  8 | import { Details } from \"./Details\";","importStack":"Import stack:\n\n src/components/scene/orbs/calanques/index.tsx\n | import \"./Cliffs\"\n\n src/components/scene/RouteOrb.tsx\n | import \"./orbs/calanques\"\n\n src/components/scene/RouteCarouselScene.tsx\n | import \"./RouteOrb\"\n\n app/index.tsx\n | import \"@/components/scene/RouteCarouselScene\"\n\n app (require.context)\n","filename":null,"targetModuleName":"./Cliffs","originModulePath":"src/components/scene/orbs/calanques/index.tsx"}
+{"_e":"metro:bundling:failed","_t":1787746829687,"id":null,"message":"Unable to resolve \"./Pines\" from \"src/components/scene/orbs/calanques/index.tsx\"\n  4 | import { CalanqueWater } from \"./Water\";\n  5 | import { Cliffs } from \"./Cliffs\";\n> 6 | import { Pines } from \"./Pines\";\n    |                        ^\n  7 | import { Shore } from \"./Shore\";\n  8 | import { Details } from \"./Details\";\n  9 | import { makeCircleTexture } from \"./shared\";","importStack":"Import stack:\n\n src/components/scene/orbs/calanques/index.tsx\n | import \"./Pines\"\n\n src/components/scene/RouteOrb.tsx\n | import \"./orbs/calanques\"\n\n src/components/scene/RouteCarouselScene.tsx\n | import \"./RouteOrb\"\n\n app/index.tsx\n | import \"@/components/scene/RouteCarouselScene\"\n\n app (require.context)\n","filename":null,"targetModuleName":"./Pines","originModulePath":"src/components/scene/orbs/calanques/index.tsx"}
+{"_e":"metro:bundling:failed","_t":1787746859969,"id":null,"message":"Unable to resolve \"./Shore\" from \"src/components/scene/orbs/calanques/index.tsx\"\n   5 | import { Cliffs } from \"./Cliffs\";\n   6 | import { Pines } from \"./Pines\";\n>  7 | import { Shore } from \"./Shore\";\n     |                        ^\n   8 | import { Details } from \"./Details\";\n   9 | import { makeCircleTexture } from \"./shared\";\n  10 |","importStack":"Import stack:\n\n src/components/scene/orbs/calanques/index.tsx\n | import \"./Shore\"\n\n src/components/scene/RouteOrb.tsx\n | import \"./orbs/calanques\"\n\n src/components/scene/RouteCarouselScene.tsx\n | import \"./RouteOrb\"\n\n app/index.tsx\n | import \"@/components/scene/RouteCarouselScene\"\n\n app (require.context)\n","filename":null,"targetModuleName":"./Shore","originModulePath":"src/components/scene/orbs/calanques/index.tsx"}
+{"_e":"metro:bundling:failed","_t":1787746885738,"id":null,"message":"Unable to resolve \"./Details\" from \"src/components/scene/orbs/calanques/index.tsx\"\n   6 | import { Pines } from \"./Pines\";\n   7 | import { Shore } from \"./Shore\";\n>  8 | import { Details } from \"./Details\";\n     |                          ^\n   9 | import { makeCircleTexture } from \"./shared\";\n  10 |\n  11 | interface Props { isActive: boolean; onTap?: () => void; color?: string }","importStack":"Import stack:\n\n src/components/scene/orbs/calanques/index.tsx\n | import \"./Details\"\n\n src/components/scene/RouteOrb.tsx\n | import \"./orbs/calanques\"\n\n src/components/scene/RouteCarouselScene.tsx\n | import \"./RouteOrb\"\n\n app/index.tsx\n | import \"@/components/scene/RouteCarouselScene\"\n\n app (require.context)\n","filename":null,"targetModuleName":"./Details","originModulePath":"src/components/scene/orbs/calanques/index.tsx"}
+{"_e":"metro:bundling:failed","_t":1787746912765,"id":null,"message":"Unable to resolve \"./Crowns\" from \"src/components/scene/orbs/calanques/Pines/index.tsx\"\n  2 | import * as THREE from \"three\";\n  3 | import { addTrunks } from \"./Trunks\";\n> 4 | import { addCrowns } from \"./Crowns\";\n    |                            ^\n  5 | import { addShrubs } from \"./Shrubs\";\n  6 | import { addHerbs } from \"./Herbs\";\n  7 | import { addFlowers } from \"./Flowers\";","importStack":"Import stack:\n\n src/components/scene/orbs/calanques/Pines/index.tsx\n | import \"./Crowns\"\n\n src/components/scene/orbs/calanques/index.tsx\n | import \"./Pines\"\n\n src/components/scene/RouteOrb.tsx\n | import \"./orbs/calanques\"\n\n src/components/scene/RouteCarouselScene.tsx\n | import \"./RouteOrb\"\n\n app/index.tsx\n | import \"@/components/scene/RouteCarouselScene\"\n\n app (require.context)\n","filename":null,"targetModuleName":"./Crowns","originModulePath":"src/components/scene/orbs/calanques/Pines/index.tsx"}
+{"_e":"root:init","_t":1787746934303,"format":"v0-jsonl","version":"56.1.14"}
+{"_e":"env:mode","_t":1787746934304,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1787746934306,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1787746934565,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1787746934838,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1787746939389,"atlas":false,"workers":3,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1787746940162,"id":"1","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1787746940163,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1787746940167,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1787746940586,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1787746940609,"id":"1","progress":0.010000000000000002,"total":1,"current":1}
+{"_e":"metro:bundling:progress","_t":1787746940708,"id":"1","progress":0.25,"total":10,"current":5}
+{"_e":"metro:bundling:progress","_t":1787746940810,"id":"1","progress":0.4444444444444444,"total":12,"current":8}
+{"_e":"metro:bundling:progress","_t":1787746940879,"id":"1","progress":0.5625,"total":12,"current":9}
+{"_e":"metro:bundling:progress","_t":1787746940979,"id":"1","progress":0.5625,"total":22,"current":12}
+{"_e":"metro:bundling:progress","_t":1787746941080,"id":"1","progress":0.5625,"total":31,"current":19}
+{"_e":"metro:bundling:progress","_t":1787746941202,"id":"1","progress":0.5625,"total":31,"current":19}
+{"_e":"metro:bundling:progress","_t":1787746941216,"id":"1","progress":0.5625,"total":31,"current":20}
+{"_e":"metro:bundling:progress","_t":1787746941231,"id":"1","progress":0.5625,"total":31,"current":20}
+{"_e":"metro:bundling:progress","_t":1787746941317,"id":"1","progress":0.5625,"total":39,"current":24}
+{"_e":"metro:bundling:progress","_t":1787746941417,"id":"1","progress":0.5625,"total":45,"current":33}
+{"_e":"metro:bundling:progress","_t":1787746941529,"id":"1","progress":0.5625,"total":80,"current":39}
+{"_e":"metro:bundling:progress","_t":1787746941629,"id":"1","progress":0.5625,"total":152,"current":51}
+{"_e":"metro:bundling:progress","_t":1787746941729,"id":"1","progress":0.5625,"total":177,"current":58}
+{"_e":"metro:bundling:progress","_t":1787746941830,"id":"1","progress":0.5625,"total":200,"current":73}
+{"_e":"metro:bundling:progress","_t":1787746941932,"id":"1","progress":0.5625,"total":227,"current":89}
+{"_e":"metro:bundling:progress","_t":1787746942032,"id":"1","progress":0.5625,"total":243,"current":108}
+{"_e":"metro:bundling:progress","_t":1787746942133,"id":"1","progress":0.5625,"total":258,"current":118}
+{"_e":"metro:bundling:progress","_t":1787746942235,"id":"1","progress":0.5625,"total":271,"current":130}
+{"_e":"metro:bundling:progress","_t":1787746942336,"id":"1","progress":0.5625,"total":293,"current":139}
+{"_e":"metro:bundling:progress","_t":1787746942441,"id":"1","progress":0.5625,"total":298,"current":142}
+{"_e":"metro:bundling:progress","_t":1787746942541,"id":"1","progress":0.5625,"total":313,"current":154}
+{"_e":"metro:bundling:progress","_t":1787746942642,"id":"1","progress":0.5625,"total":319,"current":173}
+{"_e":"metro:bundling:progress","_t":1787746942742,"id":"1","progress":0.5625,"total":327,"current":186}
+{"_e":"metro:bundling:progress","_t":1787746942843,"id":"1","progress":0.5625,"total":339,"current":195}
+{"_e":"metro:bundling:progress","_t":1787746942943,"id":"1","progress":0.5625,"total":371,"current":211}
+{"_e":"metro:bundling:progress","_t":1787746943044,"id":"1","progress":0.5625,"total":383,"current":225}
+{"_e":"metro:bundling:progress","_t":1787746943156,"id":"1","progress":0.5625,"total":388,"current":237}
+{"_e":"metro:bundling:progress","_t":1787746943256,"id":"1","progress":0.5625,"total":400,"current":250}
+{"_e":"metro:bundling:progress","_t":1787746943359,"id":"1","progress":0.5625,"total":406,"current":266}
+{"_e":"metro:bundling:progress","_t":1787746943462,"id":"1","progress":0.5625,"total":424,"current":273}
+{"_e":"metro:bundling:progress","_t":1787746943562,"id":"1","progress":0.5625,"total":430,"current":280}
+{"_e":"metro:bundling:progress","_t":1787746943666,"id":"1","progress":0.5625,"total":442,"current":288}
+{"_e":"metro:bundling:progress","_t":1787746943766,"id":"1","progress":0.5625,"total":489,"current":300}
+{"_e":"metro:bundling:progress","_t":1787746943867,"id":"1","progress":0.5625,"total":496,"current":318}
+{"_e":"metro:bundling:progress","_t":1787746943967,"id":"1","progress":0.5625,"total":501,"current":329}
+{"_e":"metro:bundling:progress","_t":1787746944067,"id":"1","progress":0.5625,"total":513,"current":339}
+{"_e":"metro:bundling:progress","_t":1787746944167,"id":"1","progress":0.5625,"total":514,"current":355}
+{"_e":"metro:bundling:progress","_t":1787746944267,"id":"1","progress":0.5625,"total":529,"current":369}
+{"_e":"metro:bundling:progress","_t":1787746944443,"id":"1","progress":0.5625,"total":531,"current":380}
+{"_e":"metro:bundling:progress","_t":1787746944548,"id":"1","progress":0.5625,"total":558,"current":399}
+{"_e":"metro:bundling:progress","_t":1787746944648,"id":"1","progress":0.5625,"total":565,"current":419}
+{"_e":"metro:bundling:progress","_t":1787746944749,"id":"1","progress":0.586181640625,"total":576,"current":441}
+{"_e":"metro:bundling:progress","_t":1787746944849,"id":"1","progress":0.586181640625,"total":604,"current":458}
+{"_e":"metro:bundling:progress","_t":1787746944951,"id":"1","progress":0.6186377840870793,"total":609,"current":479}
+{"_e":"metro:bundling:progress","_t":1787746945051,"id":"1","progress":0.6186377840870793,"total":646,"current":492}
+{"_e":"metro:bundling:progress","_t":1787746945153,"id":"1","progress":0.6186377840870793,"total":648,"current":500}
+{"_e":"metro:bundling:progress","_t":1787746945253,"id":"1","progress":0.6186377840870793,"total":649,"current":502}
+{"_e":"metro:bundling:progress","_t":1787746945357,"id":"1","progress":0.6186377840870793,"total":652,"current":511}
+{"_e":"metro:bundling:progress","_t":1787746945457,"id":"1","progress":0.620752984389348,"total":660,"current":520}
+{"_e":"metro:bundling:progress","_t":1787746945557,"id":"1","progress":0.632802306518175,"total":665,"current":529}
+{"_e":"metro:bundling:progress","_t":1787746945658,"id":"1","progress":0.6409598798801498,"total":667,"current":534}
+{"_e":"metro:bundling:progress","_t":1787746945789,"id":"1","progress":0.6578742113201269,"total":667,"current":541}
+{"_e":"metro:bundling:progress","_t":1787746945889,"id":"1","progress":0.661672978391624,"total":670,"current":545}
+{"_e":"metro:bundling:progress","_t":1787746945990,"id":"1","progress":0.6646313671193059,"total":682,"current":556}
+{"_e":"metro:bundling:progress","_t":1787746946090,"id":"1","progress":0.6818938924604868,"total":683,"current":564}
+{"_e":"metro:bundling:progress","_t":1787746946190,"id":"1","progress":0.7033552765008113,"total":688,"current":577}
+{"_e":"metro:bundling:progress","_t":1787746946291,"id":"1","progress":0.7174798906400638,"total":693,"current":587}
+{"_e":"metro:bundling:progress","_t":1787746946414,"id":"1","progress":0.7322222430447539,"total":693,"current":593}
+{"_e":"metro:bundling:progress","_t":1787746946513,"id":"1","progress":0.7728813208426065,"total":695,"current":611}
+{"_e":"metro:bundling:progress","_t":1787746946613,"id":"1","progress":0.79692018640977,"total":699,"current":624}
+{"_e":"metro:bundling:progress","_t":1787746946715,"id":"1","progress":0.79692018640977,"total":722,"current":636}
+{"_e":"metro:bundling:progress","_t":1787746946815,"id":"1","progress":0.79692018640977,"total":736,"current":647}
+{"_e":"metro:bundling:progress","_t":1787746946917,"id":"1","progress":0.79692018640977,"total":742,"current":661}
+{"_e":"metro:bundling:progress","_t":1787746947017,"id":"1","progress":0.822494624264373,"total":752,"current":682}
+{"_e":"metro:bundling:progress","_t":1787746947127,"id":"1","progress":0.822494624264373,"total":772,"current":692}
+{"_e":"metro:bundling:progress","_t":1787746947226,"id":"1","progress":0.822494624264373,"total":774,"current":700}
+{"_e":"metro:bundling:progress","_t":1787746947327,"id":"1","progress":0.822494624264373,"total":793,"current":705}
+{"_e":"metro:bundling:progress","_t":1787746947432,"id":"1","progress":0.822494624264373,"total":793,"current":710}
+{"_e":"metro:bundling:progress","_t":1787746947648,"id":"1","progress":0.822494624264373,"total":793,"current":714}
+{"_e":"metro:bundling:progress","_t":1787746947747,"id":"1","progress":0.822494624264373,"total":820,"current":729}
+{"_e":"metro:bundling:progress","_t":1787746947847,"id":"1","progress":0.822494624264373,"total":840,"current":744}
+{"_e":"metro:bundling:progress","_t":1787746947947,"id":"1","progress":0.822494624264373,"total":866,"current":766}
+{"_e":"metro:bundling:progress","_t":1787746948057,"id":"1","progress":0.822494624264373,"total":873,"current":777}
+{"_e":"metro:bundling:progress","_t":1787746948157,"id":"1","progress":0.8313763155581273,"total":873,"current":796}
+{"_e":"metro:bundling:progress","_t":1787746948259,"id":"1","progress":0.8779668533804644,"total":873,"current":818}
+{"_e":"metro:bundling:progress","_t":1787746948361,"id":"1","progress":0.8787729359430836,"total":879,"current":824}
+{"_e":"metro:bundling:progress","_t":1787746948461,"id":"1","progress":0.9141855018403914,"total":889,"current":850}
+{"_e":"metro:bundling:progress","_t":1787746948563,"id":"1","progress":0.9280111111111112,"total":900,"current":867}
+{"_e":"metro:bundling:progress","_t":1787746948663,"id":"1","progress":0.9280111111111112,"total":933,"current":878}
+{"_e":"metro:bundling:progress","_t":1787746948764,"id":"1","progress":0.9369247205785667,"total":936,"current":906}
+{"_e":"metro:bundling:progress","_t":1787746948864,"id":"1","progress":0.9662471706654594,"total":940,"current":924}
+{"_e":"metro:bundling:progress","_t":1787746948964,"id":"1","progress":0.9873418997228521,"total":945,"current":939}
+{"_e":"metro:bundling:progress","_t":1787746949068,"id":"1","progress":0.9978958448753462,"total":950,"current":949}
+{"_e":"metro:bundling:progress","_t":1787746950012,"id":"1","progress":0.999,"total":950,"current":950}
+{"_e":"metro:bundling:done","_t":1787746950148,"id":"1","total":950,"ms":9985.40911}
+{"_e":"metro:client_log","_t":1787746951126,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787746951127,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787746951127,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787746951128,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787746951128,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:bundling:failed","_t":1787747167394,"id":null,"message":"Unable to resolve \"./Coast\" from \"src/components/scene/orbs/corniche/index.tsx\"\n  3 | import * as THREE from \"three\";\n  4 | import { Sea } from \"./Sea\";\n> 5 | import { Coast } from \"./Coast\";\n    |                        ^\n  6 | import { CornicheRoad } from \"./Road\";\n  7 | import { Buildings } from \"./Buildings\";\n  8 | import { Details } from \"./Details\";","importStack":"Import stack:\n\n src/components/scene/orbs/corniche/index.tsx\n | import \"./Coast\"\n\n src/components/scene/RouteOrb.tsx\n | import \"./orbs/corniche\"\n\n src/components/scene/RouteCarouselScene.tsx\n | import \"./RouteOrb\"\n\n app/index.tsx\n | import \"@/components/scene/RouteCarouselScene\"\n\n app (require.context)\n","filename":null,"targetModuleName":"./Coast","originModulePath":"src/components/scene/orbs/corniche/index.tsx"}
+{"_e":"metro:bundling:failed","_t":1787747194431,"id":null,"message":"Unable to resolve \"./Road\" from \"src/components/scene/orbs/corniche/index.tsx\"\n  4 | import { Sea } from \"./Sea\";\n  5 | import { Coast } from \"./Coast\";\n> 6 | import { CornicheRoad } from \"./Road\";\n    |                               ^\n  7 | import { Buildings } from \"./Buildings\";\n  8 | import { Details } from \"./Details\";\n  9 | import { makeCircleTexture } from \"./shared\";","importStack":"Import stack:\n\n src/components/scene/orbs/corniche/index.tsx\n | import \"./Road\"\n\n src/components/scene/RouteOrb.tsx\n | import \"./orbs/corniche\"\n\n src/components/scene/RouteCarouselScene.tsx\n | import \"./RouteOrb\"\n\n app/index.tsx\n | import \"@/components/scene/RouteCarouselScene\"\n\n app (require.context)\n","filename":null,"targetModuleName":"./Road","originModulePath":"src/components/scene/orbs/corniche/index.tsx"}
+{"_e":"metro:bundling:failed","_t":1787747220207,"id":null,"message":"Unable to resolve \"./Buildings\" from \"src/components/scene/orbs/corniche/index.tsx\"\n   5 | import { Coast } from \"./Coast\";\n   6 | import { CornicheRoad } from \"./Road\";\n>  7 | import { Buildings } from \"./Buildings\";\n     |                            ^\n   8 | import { Details } from \"./Details\";\n   9 | import { makeCircleTexture } from \"./shared\";\n  10 |","importStack":"Import stack:\n\n src/components/scene/orbs/corniche/index.tsx\n | import \"./Buildings\"\n\n src/components/scene/RouteOrb.tsx\n | import \"./orbs/corniche\"\n\n src/components/scene/RouteCarouselScene.tsx\n | import \"./RouteOrb\"\n\n app/index.tsx\n | import \"@/components/scene/RouteCarouselScene\"\n\n app (require.context)\n","filename":null,"targetModuleName":"./Buildings","originModulePath":"src/components/scene/orbs/corniche/index.tsx"}
+{"_e":"metro:bundling:failed","_t":1787747244749,"id":null,"message":"Unable to resolve \"./Details\" from \"src/components/scene/orbs/corniche/index.tsx\"\n   6 | import { CornicheRoad } from \"./Road\";\n   7 | import { Buildings } from \"./Buildings\";\n>  8 | import { Details } from \"./Details\";\n     |                          ^\n   9 | import { makeCircleTexture } from \"./shared\";\n  10 |\n  11 | interface Props { isActive: boolean; onTap?: () => void; color?: string }","importStack":"Import stack:\n\n src/components/scene/orbs/corniche/index.tsx\n | import \"./Details\"\n\n src/components/scene/RouteOrb.tsx\n | import \"./orbs/corniche\"\n\n src/components/scene/RouteCarouselScene.tsx\n | import \"./RouteOrb\"\n\n app/index.tsx\n | import \"@/components/scene/RouteCarouselScene\"\n\n app (require.context)\n","filename":null,"targetModuleName":"./Details","originModulePath":"src/components/scene/orbs/corniche/index.tsx"}
+{"_e":"metro:bundling:failed","_t":1787747264454,"id":null,"message":"Unable to resolve \"./Markings\" from \"src/components/scene/orbs/corniche/Road/index.tsx\"\n  1 | import { useMemo } from \"react\"; import * as THREE from \"three\";\n> 2 | import { addAsphalt } from \"./Asphalt\"; import { addMarkings } from \"./Markings\"; import { addParapet } from \"./Parapet\"; import { addLamps } from \"./Lamps\"; import { addVehicles } from \"./Vehicles\"; import type { Cloud } from \"../shared\";\n    |                                                                      ^\n  3 | export function CornicheRoad({circleTex}:{circleTex:THREE.Texture}){const data=useMemo(()=>{const cloud:Cloud={points:[],colors:[]};addAsphalt(cloud);addMarkings(cloud);addParapet(cloud);addLamps(cloud);addVehicles(cloud);return{positions:new Float32Array(cloud.points),colors:new Float32Array(cloud.colors)}},[]);return <points><bufferGeometry><bufferAttribute attach=\"attributes-position\" args={[data.positions,3]}/><bufferAttribute attach=\"attributes-color\" args={[data.colors,3]}/></bufferGeometry><pointsMaterial map={circleTex} alphaTest={0.1} size={0.052} vertexColors transparent depthWrite={false}/></points>}\n  4 |","importStack":"Import stack:\n\n src/components/scene/orbs/corniche/Road/index.tsx\n | import \"./Markings\"\n\n src/components/scene/orbs/corniche/index.tsx\n | import \"./Road\"\n\n src/components/scene/RouteOrb.tsx\n | import \"./orbs/corniche\"\n\n src/components/scene/RouteCarouselScene.tsx\n | import \"./RouteOrb\"\n\n app/index.tsx\n | import \"@/components/scene/RouteCarouselScene\"\n\n app (require.context)\n","filename":null,"targetModuleName":"./Markings","originModulePath":"src/components/scene/orbs/corniche/Road/index.tsx"}
+{"_e":"root:init","_t":1787747288327,"format":"v0-jsonl","version":"56.1.14"}
+{"_e":"env:mode","_t":1787747288327,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1787747288330,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1787747288593,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1787747288867,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1787747293644,"atlas":false,"workers":3,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1787747294435,"id":"1","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1787747294436,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1787747294444,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1787747294857,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1787747294882,"id":"1","progress":0.010000000000000002,"total":1,"current":1}
+{"_e":"metro:bundling:progress","_t":1787747294982,"id":"1","progress":0.16000000000000003,"total":10,"current":4}
+{"_e":"metro:bundling:progress","_t":1787747295083,"id":"1","progress":0.6400000000000001,"total":10,"current":8}
+{"_e":"metro:bundling:progress","_t":1787747295185,"id":"1","progress":0.6400000000000001,"total":12,"current":8}
+{"_e":"metro:bundling:progress","_t":1787747295241,"id":"1","progress":0.6400000000000001,"total":12,"current":9}
+{"_e":"metro:bundling:progress","_t":1787747295343,"id":"1","progress":0.6400000000000001,"total":18,"current":9}
+{"_e":"metro:bundling:progress","_t":1787747295366,"id":"1","progress":0.6400000000000001,"total":18,"current":10}
+{"_e":"metro:bundling:progress","_t":1787747295467,"id":"1","progress":0.6400000000000001,"total":25,"current":15}
+{"_e":"metro:bundling:progress","_t":1787747295524,"id":"1","progress":0.6400000000000001,"total":25,"current":15}
+{"_e":"metro:bundling:progress","_t":1787747295593,"id":"1","progress":0.6400000000000001,"total":32,"current":19}
+{"_e":"metro:bundling:progress","_t":1787747295667,"id":"1","progress":0.6400000000000001,"total":32,"current":19}
+{"_e":"metro:bundling:progress","_t":1787747295702,"id":"1","progress":0.6400000000000001,"total":35,"current":21}
+{"_e":"metro:bundling:progress","_t":1787747295802,"id":"1","progress":0.6400000000000001,"total":41,"current":25}
+{"_e":"metro:bundling:progress","_t":1787747295902,"id":"1","progress":0.6400000000000001,"total":63,"current":34}
+{"_e":"metro:bundling:progress","_t":1787747296021,"id":"1","progress":0.6400000000000001,"total":71,"current":39}
+{"_e":"metro:bundling:progress","_t":1787747296121,"id":"1","progress":0.6400000000000001,"total":157,"current":50}
+{"_e":"metro:bundling:progress","_t":1787747296224,"id":"1","progress":0.6400000000000001,"total":169,"current":59}
+{"_e":"metro:bundling:progress","_t":1787747296325,"id":"1","progress":0.6400000000000001,"total":210,"current":69}
+{"_e":"metro:bundling:progress","_t":1787747296425,"id":"1","progress":0.6400000000000001,"total":244,"current":87}
+{"_e":"metro:bundling:progress","_t":1787747296525,"id":"1","progress":0.6400000000000001,"total":258,"current":101}
+{"_e":"metro:bundling:progress","_t":1787747296625,"id":"1","progress":0.6400000000000001,"total":272,"current":111}
+{"_e":"metro:bundling:progress","_t":1787747296729,"id":"1","progress":0.6400000000000001,"total":281,"current":117}
+{"_e":"metro:bundling:progress","_t":1787747296835,"id":"1","progress":0.6400000000000001,"total":286,"current":129}
+{"_e":"metro:bundling:progress","_t":1787747296936,"id":"1","progress":0.6400000000000001,"total":290,"current":138}
+{"_e":"metro:bundling:progress","_t":1787747297011,"id":"1","progress":0.6400000000000001,"total":290,"current":139}
+{"_e":"metro:bundling:progress","_t":1787747297111,"id":"1","progress":0.6400000000000001,"total":296,"current":144}
+{"_e":"metro:bundling:progress","_t":1787747297219,"id":"1","progress":0.6400000000000001,"total":302,"current":147}
+{"_e":"metro:bundling:progress","_t":1787747297319,"id":"1","progress":0.6400000000000001,"total":312,"current":153}
+{"_e":"metro:bundling:progress","_t":1787747297419,"id":"1","progress":0.6400000000000001,"total":326,"current":164}
+{"_e":"metro:bundling:progress","_t":1787747297519,"id":"1","progress":0.6400000000000001,"total":348,"current":179}
+{"_e":"metro:bundling:progress","_t":1787747297625,"id":"1","progress":0.6400000000000001,"total":354,"current":192}
+{"_e":"metro:bundling:progress","_t":1787747297730,"id":"1","progress":0.6400000000000001,"total":391,"current":198}
+{"_e":"metro:bundling:progress","_t":1787747297831,"id":"1","progress":0.6400000000000001,"total":417,"current":213}
+{"_e":"metro:bundling:progress","_t":1787747297932,"id":"1","progress":0.6400000000000001,"total":421,"current":230}
+{"_e":"metro:bundling:progress","_t":1787747298039,"id":"1","progress":0.6400000000000001,"total":437,"current":239}
+{"_e":"metro:bundling:progress","_t":1787747298137,"id":"1","progress":0.6400000000000001,"total":442,"current":249}
+{"_e":"metro:bundling:progress","_t":1787747298244,"id":"1","progress":0.6400000000000001,"total":450,"current":256}
+{"_e":"metro:bundling:progress","_t":1787747298346,"id":"1","progress":0.6400000000000001,"total":458,"current":272}
+{"_e":"metro:bundling:progress","_t":1787747298447,"id":"1","progress":0.6400000000000001,"total":462,"current":283}
+{"_e":"metro:bundling:progress","_t":1787747298548,"id":"1","progress":0.6400000000000001,"total":465,"current":287}
+{"_e":"metro:bundling:progress","_t":1787747298650,"id":"1","progress":0.6400000000000001,"total":478,"current":296}
+{"_e":"metro:bundling:progress","_t":1787747298752,"id":"1","progress":0.6400000000000001,"total":484,"current":308}
+{"_e":"metro:bundling:progress","_t":1787747298852,"id":"1","progress":0.6400000000000001,"total":496,"current":317}
+{"_e":"metro:bundling:progress","_t":1787747298952,"id":"1","progress":0.6400000000000001,"total":508,"current":325}
+{"_e":"metro:bundling:progress","_t":1787747299052,"id":"1","progress":0.6400000000000001,"total":514,"current":335}
+{"_e":"metro:bundling:progress","_t":1787747299152,"id":"1","progress":0.6400000000000001,"total":529,"current":350}
+{"_e":"metro:bundling:progress","_t":1787747299252,"id":"1","progress":0.6400000000000001,"total":532,"current":358}
+{"_e":"metro:bundling:progress","_t":1787747299354,"id":"1","progress":0.6400000000000001,"total":547,"current":362}
+{"_e":"metro:bundling:progress","_t":1787747299460,"id":"1","progress":0.6400000000000001,"total":549,"current":373}
+{"_e":"metro:bundling:progress","_t":1787747299638,"id":"1","progress":0.6400000000000001,"total":550,"current":379}
+{"_e":"metro:bundling:progress","_t":1787747299739,"id":"1","progress":0.6400000000000001,"total":580,"current":410}
+{"_e":"metro:bundling:progress","_t":1787747299838,"id":"1","progress":0.6400000000000001,"total":585,"current":431}
+{"_e":"metro:bundling:progress","_t":1787747299943,"id":"1","progress":0.6400000000000001,"total":595,"current":447}
+{"_e":"metro:bundling:progress","_t":1787747300044,"id":"1","progress":0.6400000000000001,"total":614,"current":459}
+{"_e":"metro:bundling:progress","_t":1787747300145,"id":"1","progress":0.6400000000000001,"total":620,"current":473}
+{"_e":"metro:bundling:progress","_t":1787747300248,"id":"1","progress":0.6400000000000001,"total":636,"current":486}
+{"_e":"metro:bundling:progress","_t":1787747300351,"id":"1","progress":0.6400000000000001,"total":640,"current":492}
+{"_e":"metro:bundling:progress","_t":1787747300451,"id":"1","progress":0.6400000000000001,"total":643,"current":500}
+{"_e":"metro:bundling:progress","_t":1787747300552,"id":"1","progress":0.6400000000000001,"total":649,"current":508}
+{"_e":"metro:bundling:progress","_t":1787747300652,"id":"1","progress":0.6400000000000001,"total":652,"current":517}
+{"_e":"metro:bundling:progress","_t":1787747300753,"id":"1","progress":0.6400000000000001,"total":657,"current":523}
+{"_e":"metro:bundling:progress","_t":1787747300853,"id":"1","progress":0.6561492410454449,"total":658,"current":533}
+{"_e":"metro:bundling:progress","_t":1787747300953,"id":"1","progress":0.6759938470634972,"total":658,"current":541}
+{"_e":"metro:bundling:progress","_t":1787747301054,"id":"1","progress":0.6940229943285567,"total":659,"current":549}
+{"_e":"metro:bundling:progress","_t":1787747301154,"id":"1","progress":0.7075329407375704,"total":661,"current":556}
+{"_e":"metro:bundling:progress","_t":1787747301254,"id":"1","progress":0.7207035350170226,"total":662,"current":562}
+{"_e":"metro:bundling:progress","_t":1787747301354,"id":"1","progress":0.7324892460027596,"total":666,"current":570}
+{"_e":"metro:bundling:progress","_t":1787747301454,"id":"1","progress":0.7328592075776205,"total":667,"current":571}
+{"_e":"metro:bundling:progress","_t":1787747301556,"id":"1","progress":0.7523170924016249,"total":671,"current":582}
+{"_e":"metro:bundling:progress","_t":1787747301658,"id":"1","progress":0.7523170924016249,"total":677,"current":586}
+{"_e":"metro:bundling:progress","_t":1787747301759,"id":"1","progress":0.7646559567472274,"total":677,"current":592}
+{"_e":"metro:bundling:progress","_t":1787747301858,"id":"1","progress":0.783446591517891,"total":679,"current":601}
+{"_e":"metro:bundling:progress","_t":1787747302010,"id":"1","progress":0.7863516435986159,"total":680,"current":603}
+{"_e":"metro:bundling:progress","_t":1787747302111,"id":"1","progress":0.7869820998113014,"total":691,"current":613}
+{"_e":"metro:bundling:progress","_t":1787747302211,"id":"1","progress":0.8066462333962525,"total":697,"current":626}
+{"_e":"metro:bundling:progress","_t":1787747302312,"id":"1","progress":0.8066462333962525,"total":729,"current":636}
+{"_e":"metro:bundling:progress","_t":1787747302412,"id":"1","progress":0.8066462333962525,"total":732,"current":643}
+{"_e":"metro:bundling:progress","_t":1787747302533,"id":"1","progress":0.8066462333962525,"total":737,"current":658}
+{"_e":"metro:bundling:progress","_t":1787747302633,"id":"1","progress":0.8148721694667641,"total":740,"current":668}
+{"_e":"metro:bundling:progress","_t":1787747302733,"id":"1","progress":0.8209089680645016,"total":745,"current":675}
+{"_e":"metro:bundling:progress","_t":1787747302833,"id":"1","progress":0.8374434492608828,"total":754,"current":690}
+{"_e":"metro:bundling:progress","_t":1787747302933,"id":"1","progress":0.8374434492608828,"total":763,"current":697}
+{"_e":"metro:bundling:progress","_t":1787747303035,"id":"1","progress":0.8440865109615936,"total":763,"current":701}
+{"_e":"metro:bundling:progress","_t":1787747303136,"id":"1","progress":0.8440865109615936,"total":774,"current":704}
+{"_e":"metro:bundling:progress","_t":1787747303236,"id":"1","progress":0.8440865109615936,"total":792,"current":711}
+{"_e":"metro:bundling:progress","_t":1787747303337,"id":"1","progress":0.8440865109615936,"total":812,"current":715}
+{"_e":"metro:bundling:progress","_t":1787747303438,"id":"1","progress":0.8440865109615936,"total":832,"current":721}
+{"_e":"metro:bundling:progress","_t":1787747303540,"id":"1","progress":0.8440865109615936,"total":844,"current":725}
+{"_e":"metro:bundling:progress","_t":1787747303712,"id":"1","progress":0.8440865109615936,"total":846,"current":730}
+{"_e":"metro:bundling:progress","_t":1787747303814,"id":"1","progress":0.8440865109615936,"total":856,"current":742}
+{"_e":"metro:bundling:progress","_t":1787747303914,"id":"1","progress":0.8440865109615936,"total":890,"current":761}
+{"_e":"metro:bundling:progress","_t":1787747304015,"id":"1","progress":0.8440865109615936,"total":890,"current":764}
+{"_e":"metro:bundling:progress","_t":1787747304115,"id":"1","progress":0.8440865109615936,"total":895,"current":772}
+{"_e":"metro:bundling:progress","_t":1787747304215,"id":"1","progress":0.8440865109615936,"total":895,"current":792}
+{"_e":"metro:bundling:progress","_t":1787747304316,"id":"1","progress":0.8440865109615936,"total":895,"current":816}
+{"_e":"metro:bundling:progress","_t":1787747304416,"id":"1","progress":0.8704160294622514,"total":895,"current":835}
+{"_e":"metro:bundling:progress","_t":1787747304531,"id":"1","progress":0.8733224029041601,"total":901,"current":842}
+{"_e":"metro:bundling:progress","_t":1787747304631,"id":"1","progress":0.8787776185926132,"total":911,"current":854}
+{"_e":"metro:bundling:progress","_t":1787747304732,"id":"1","progress":0.9081214178664969,"total":914,"current":871}
+{"_e":"metro:bundling:progress","_t":1787747304836,"id":"1","progress":0.9339557639192938,"total":923,"current":892}
+{"_e":"metro:bundling:progress","_t":1787747304936,"id":"1","progress":0.9339557639192938,"total":957,"current":906}
+{"_e":"metro:bundling:progress","_t":1787747305040,"id":"1","progress":0.9344444444444444,"total":960,"current":928}
+{"_e":"metro:bundling:progress","_t":1787747305136,"id":"1","progress":0.9407390110363113,"total":964,"current":935}
+{"_e":"metro:bundling:progress","_t":1787747305237,"id":"1","progress":0.9752841687025154,"total":965,"current":953}
+{"_e":"metro:bundling:progress","_t":1787747305338,"id":"1","progress":0.991769582314805,"total":970,"current":966}
+{"_e":"metro:bundling:progress","_t":1787747305438,"id":"1","progress":0.9959016436554898,"total":975,"current":973}
+{"_e":"metro:bundling:progress","_t":1787747305539,"id":"1","progress":0.9979497698882314,"total":975,"current":974}
+{"_e":"metro:bundling:progress","_t":1787747306285,"id":"1","progress":0.999,"total":975,"current":975}
+{"_e":"metro:bundling:done","_t":1787747306429,"id":"1","total":975,"ms":11993.309248}
+{"_e":"metro:client_log","_t":1787747307357,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787747307357,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787747307357,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787747307358,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787747307358,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787747316077,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:client_log","_t":1787747318544,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787747326345,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:client_log","_t":1787747328059,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:bundling:failed","_t":1787747518787,"id":null,"message":"Unable to resolve \"@/data/demoRoutes\" from \"app/index.tsx\"\n  10 | import { colors, heat } from \"@/theme\";\n  11 | import { useRoute } from \"@/hooks/useRoute\";\n> 12 | import { DEMO_ROUTES } from \"@/data/demoRoutes\";\n     |                              ^\n  13 | import type { DemoRoute } from \"@/types\";\n  14 |\n  15 | // ─── Dot indicators ───────────────────────────────────────────────────────────","importStack":"Import stack:\n\n app/index.tsx\n | import \"@/data/demoRoutes\"\n\n app (require.context)\n","filename":null,"targetModuleName":"@/data/demoRoutes","originModulePath":"app/index.tsx"}
+{"_e":"metro:client_log","_t":1787747562976,"level":"warn","data":["[Layout children]: No route named \"index\" exists in nested children:","[\"heatmap\", \"route-detail\", \"routes\"]"]}
+{"_e":"metro:client_log","_t":1787747563972,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:client_log","_t":1787747613588,"level":"warn","data":["THREE.WARNING: Multiple instances of Three.js being imported."]}
+{"_e":"metro:bundling:started","_t":1787748747847,"id":"s","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1787748747847,"id":"s","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1787748747913,"id":"s","total":1,"ms":65.976114}
+{"_e":"metro:client_log","_t":1787748748433,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787748748434,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787748748434,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787748748448,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787748748540,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:bundling:started","_t":1787748812696,"id":"u","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1787748812697,"id":"u","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1787748812760,"id":"u","total":1,"ms":63.66403}
+{"_e":"metro:client_log","_t":1787748813323,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787748813323,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787748813323,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787748813351,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787748813468,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787748834999,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:client_log","_t":1787748838151,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787748844018,"level":"error","data":["[TypeError: Failed to fetch]"]}
+{"_e":"metro:client_log","_t":1787748844532,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:client_log","_t":1787748846694,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:bundling:started","_t":1787749333284,"id":"12","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1787749333284,"id":"12","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1787749333345,"id":"12","total":1,"ms":60.373023}
+{"_e":"metro:client_log","_t":1787749333863,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787749333863,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787749333864,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787749333872,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787749333962,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:bundling:started","_t":1787749534767,"id":"14","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1787749534767,"id":"14","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1787749534828,"id":"14","total":1,"ms":60.977704}
+{"_e":"metro:client_log","_t":1787749535421,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787749535421,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787749535421,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787749535431,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787749535524,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787749562030,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:client_log","_t":1787749563726,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787749570970,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:client_log","_t":1787749572396,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:bundling:started","_t":1787749857748,"id":"1a","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1787749857748,"id":"1a","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1787749857810,"id":"1a","total":1,"ms":61.785025}
+{"_e":"metro:client_log","_t":1787749858347,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787749858348,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787749858365,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787749858466,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787749858568,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:bundling:started","_t":1787749878166,"id":"1b","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1787749878167,"id":"1b","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1787749878228,"id":"1b","total":1,"ms":61.712465}
+{"_e":"metro:client_log","_t":1787749878760,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787749878762,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787749878775,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787749878876,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787749878977,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:bundling:started","_t":1787749942251,"id":"1c","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1787749942251,"id":"1c","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1787749942313,"id":"1c","total":1,"ms":61.667265}
+{"_e":"metro:client_log","_t":1787749942799,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787749942799,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787749942799,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787749942815,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787749942909,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:bundling:started","_t":1787749968538,"id":"1e","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1787749968538,"id":"1e","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1787749968599,"id":"1e","total":1,"ms":61.651225}
+{"_e":"metro:client_log","_t":1787749969107,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787749969107,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787749969107,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787749969116,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787749969211,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:bundling:started","_t":1787749988290,"id":"1g","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1787749988290,"id":"1g","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1787749988354,"id":"1g","total":1,"ms":63.650268}
+{"_e":"metro:client_log","_t":1787749988930,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787749988931,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787749988932,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787749988953,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787749989093,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:bundling:started","_t":1787750007127,"id":"1i","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1787750007127,"id":"1i","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1787750007189,"id":"1i","total":1,"ms":61.953706}
+{"_e":"metro:client_log","_t":1787750007784,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787750007784,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787750007784,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787750007785,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787750007873,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787750010073,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:bundling:started","_t":1787750444268,"id":"1l","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1787750444268,"id":"1l","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1787750444329,"id":"1l","total":1,"ms":60.852828}
+{"_e":"metro:client_log","_t":1787750444847,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787750444848,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787750444923,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787750444962,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787750445063,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:bundling:started","_t":1787750967924,"id":"1m","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:progress","_t":1787750967924,"id":"1m","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1787750967992,"id":"1m","total":1,"ms":68.125118}
+{"_e":"metro:client_log","_t":1787750968517,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787750968517,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787750968611,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787750968648,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787750968751,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787750974269,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"root:init","_t":1787751135585,"format":"v0-jsonl","version":"56.1.14"}
+{"_e":"env:mode","_t":1787751135586,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1787751135588,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1787751135853,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1787751136140,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1787751140703,"atlas":false,"workers":3,"host":"::","port":8081}
+{"_e":"root:init","_t":1787751226787,"format":"v0-jsonl","version":"56.1.14"}
+{"_e":"env:mode","_t":1787751226788,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1787751226790,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1787751227042,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":true,"apiRoutes":true,"exporting":false}
+{"_e":"metro:config","_t":1787751227315,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1787751231830,"atlas":false,"workers":3,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1787751238536,"id":"2","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:started","_t":1787751238537,"id":"3","platform":"web","environment":"node","entry":"node_modules/@expo/router-server/node/render.js"}
+{"_e":"metro:bundling:done","_t":1787751259152,"id":"3","total":994,"ms":20614.741833}
+{"_e":"metro:bundling:done","_t":1787751259844,"id":"2","total":996,"ms":21308.022906}
+{"_e":"metro:bundling:started","_t":1787751271586,"id":"7","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:started","_t":1787751271586,"id":"8","platform":"web","environment":"node","entry":"node_modules/@expo/router-server/node/render.js"}
+{"_e":"metro:bundling:done","_t":1787751271629,"id":"8","total":1,"ms":42.548993}
+{"_e":"metro:bundling:done","_t":1787751272001,"id":"7","total":1,"ms":414.648913}
+{"_e":"root:init","_t":1787751358443,"format":"v0-jsonl","version":"56.1.14"}
+{"_e":"env:mode","_t":1787751358443,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1787751358446,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1787751358699,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1787751358971,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:instantiate","_t":1787751363511,"atlas":false,"workers":3,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1787751438659,"id":"1","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:done","_t":1787751448858,"id":"1","total":996,"ms":10198.919427}
+{"_e":"metro:client_log","_t":1787751449374,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787751449375,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787751449467,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787751449505,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787751449606,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:bundling:started","_t":1787751583304,"id":"2","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:done","_t":1787751583395,"id":"2","total":1,"ms":90.193275}
+{"_e":"metro:client_log","_t":1787751583931,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787751583932,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787751584024,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787751584063,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787751584163,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787751589652,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:bundling:started","_t":1787751646282,"id":"5","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:done","_t":1787751646380,"id":"5","total":1,"ms":97.604207}
+{"_e":"metro:client_log","_t":1787751646945,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787751646947,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787751647041,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787751647079,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787751647181,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787751652631,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:bundling:started","_t":1787751665392,"id":"8","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:done","_t":1787751665462,"id":"8","total":1,"ms":69.552239}
+{"_e":"metro:client_log","_t":1787751666039,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787751666039,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787751666134,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787751666172,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787751666275,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:bundling:started","_t":1787752406780,"id":"9","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:done","_t":1787752406846,"id":"9","total":1,"ms":65.553992}
+{"_e":"metro:client_log","_t":1787752410093,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787752410093,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787752410095,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787752410095,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787752410203,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:bundling:started","_t":1787752419306,"id":"b","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:done","_t":1787752419372,"id":"b","total":1,"ms":65.577432}
+{"_e":"metro:client_log","_t":1787752423856,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787752423856,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787752423857,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787752423857,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787752423857,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:bundling:started","_t":1787753238701,"id":"d","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:done","_t":1787753238765,"id":"d","total":1,"ms":64.767028}
+{"_e":"metro:client_log","_t":1787753239369,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787753239369,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787753239369,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787753239385,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787753239480,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787753260506,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:client_log","_t":1787753277345,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:bundling:started","_t":1787753316931,"id":"j","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:done","_t":1787753316995,"id":"j","total":1,"ms":63.277505}
+{"_e":"metro:client_log","_t":1787753317503,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787753317503,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787753317503,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787753317513,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787753317606,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787753322081,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:client_log","_t":1787753322876,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1787753322972,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1787753323040,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1787753323151,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1787753323229,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1787753323313,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1787753323395,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1787753323463,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1787753324481,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1787753324648,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1787753324730,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1787753325513,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1787753325596,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1787753325680,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1787753325763,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1787753326678,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1787753327663,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1787753327734,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1787753327814,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1787753327895,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1787753327978,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1787753328062,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1787753328128,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1787753328212,"level":"error","data":["Encountered two children with the same key, `.$ENDOUME`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version."]}
+{"_e":"metro:client_log","_t":1787753329429,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:bundling:started","_t":1787753527468,"id":"p","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:done","_t":1787753527533,"id":"p","total":1,"ms":65.024469}
+{"_e":"metro:client_log","_t":1787753528098,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787753528099,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787753528100,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787753528105,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787753528196,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:bundling:started","_t":1787753646098,"id":"r","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:done","_t":1787753646164,"id":"r","total":1,"ms":65.54831}
+{"_e":"metro:client_log","_t":1787753646730,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787753646730,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787753646731,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787753646731,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787753646792,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:bundling:started","_t":1787753863810,"id":"t","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:done","_t":1787753863875,"id":"t","total":1,"ms":64.884469}
+{"_e":"metro:client_log","_t":1787753864431,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787753864432,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787753864528,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787753864566,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787753864670,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:bundling:started","_t":1787754072307,"id":"u","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:done","_t":1787754072371,"id":"u","total":1,"ms":63.650507}
+{"_e":"metro:client_log","_t":1787754072874,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787754072874,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787754072875,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787754072884,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787754072993,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:bundling:started","_t":1787754127014,"id":"w","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:done","_t":1787754127079,"id":"w","total":1,"ms":64.761909}
+{"_e":"metro:client_log","_t":1787754127609,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787754127609,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787754127610,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787754127621,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787754127710,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787754131842,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:bundling:started","_t":1787754369582,"id":"11","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:done","_t":1787754369646,"id":"11","total":1,"ms":63.596947}
+{"_e":"metro:client_log","_t":1787754370184,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787754370185,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787754370289,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787754370329,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787754370434,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:bundling:started","_t":1787754373809,"id":"12","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:done","_t":1787754373869,"id":"12","total":1,"ms":59.959661}
+{"_e":"metro:client_log","_t":1787754374392,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787754374392,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787754374498,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787754374536,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787754374633,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:bundling:started","_t":1787754378006,"id":"13","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:done","_t":1787754378073,"id":"13","total":1,"ms":67.108554}
+{"_e":"metro:client_log","_t":1787754378623,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787754378623,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787754378718,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787754378755,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787754378852,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:bundling:started","_t":1787754382239,"id":"14","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:done","_t":1787754382303,"id":"14","total":1,"ms":63.634148}
+{"_e":"metro:client_log","_t":1787754382828,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787754382828,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787754382927,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787754382966,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787754383064,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:bundling:started","_t":1787754400969,"id":"15","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:done","_t":1787754401031,"id":"15","total":1,"ms":61.849505}
+{"_e":"metro:client_log","_t":1787754401613,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787754401613,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787754401706,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787754401744,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787754401847,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787754406533,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:bundling:started","_t":1787754454415,"id":"18","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:done","_t":1787754454480,"id":"18","total":1,"ms":64.68231}
+{"_e":"metro:client_log","_t":1787754455041,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787754455041,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787754455140,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787754455178,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787754455282,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:bundling:started","_t":1787754543994,"id":"19","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:done","_t":1787754544057,"id":"19","total":1,"ms":62.745629}
+{"_e":"metro:client_log","_t":1787754544843,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787754544843,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787754544886,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787754544924,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787754545088,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787754561061,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:client_log","_t":1787754564181,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787754566120,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:client_log","_t":1787754570238,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787754572349,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:client_log","_t":1787754579482,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787754581603,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:client_log","_t":1787754586733,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787754595837,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:client_log","_t":1787754603255,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787754605202,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:client_log","_t":1787754607820,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787754646294,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:client_log","_t":1787754668852,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787754676105,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:client_log","_t":1787754694739,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787754696825,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:client_log","_t":1787754701454,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787754706155,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:bundling:started","_t":1787755379950,"id":"28","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:done","_t":1787755380098,"id":"28","total":1,"ms":148.417493}
+{"_e":"metro:client_log","_t":1787755380629,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787755380629,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787755380727,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787755380767,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787755380872,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}
+{"_e":"metro:client_log","_t":1787755394561,"level":"log","data":["THREE.WebGLRenderer: Context Lost."]}
+{"_e":"metro:bundling:started","_t":1787755461668,"id":"2b","platform":"web","environment":null,"entry":"node_modules/expo-router/entry.js"}
+{"_e":"metro:bundling:done","_t":1787755461813,"id":"2b","total":1,"ms":145.158928}
+{"_e":"metro:client_log","_t":1787755462351,"level":"info","data":["%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools","font-weight:bold"]}
+{"_e":"metro:client_log","_t":1787755462352,"level":"log","data":["Running application \"main\" with appParams:\n","{\"hydrate\": undefined, \"rootTag\": \"#root\"}","\nDevelopment-level warnings: ON.\nPerformance optimizations: OFF."]}
+{"_e":"metro:client_log","_t":1787755462449,"level":"warn","data":["\"shadow*\" style props are deprecated. Use \"boxShadow\"."]}
+{"_e":"metro:client_log","_t":1787755462488,"level":"warn","data":["props.pointerEvents is deprecated. Use style.pointerEvents"]}
+{"_e":"metro:client_log","_t":1787755462595,"level":"warn","data":["THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."]}

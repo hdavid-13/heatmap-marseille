@@ -20,9 +20,9 @@ export const colors = {
 } as const;
 
 export const heat: Record<HeatLabel, { color: string; bg: string; emoji: string; label: string }> = {
-  cool: { color: "#22c55e", bg: "#052e16", emoji: "🌿", label: "Fresh route" },
-  warm: { color: "#f59e0b", bg: "#2d1a04", emoji: "☀️",  label: "Warm route"  },
-  hot:  { color: "#ef4444", bg: "#2d0707", emoji: "🔥", label: "Hot route"   },
+  cool: { color: "#22c55e", bg: "#052e16", emoji: "🌿", label: "Itinéraire frais" },
+  warm: { color: "#f59e0b", bg: "#2d1a04", emoji: "☀️",  label: "Itinéraire tempéré" },
+  hot:  { color: "#ef4444", bg: "#2d0707", emoji: "🔥", label: "Itinéraire chaud"   },
 };
 
 export const radius = { sm: 10, md: 14, lg: 20, xl: 24 } as const;

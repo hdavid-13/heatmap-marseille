@@ -10,4 +10,4 @@ server:
 map:
   center_lat: 43.2965
   center_lon: 5.3698
-  default_radius_km: 3.3
+  default_radius_km: 15

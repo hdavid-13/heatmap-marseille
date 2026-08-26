@@ -25,7 +25,7 @@ function CarouselGroup({ routes, currentIndex, panOffsetRef, onTap }: Props) {
   });
 
   return (
-    <group ref={groupRef}>
+    <group ref={groupRef} position={[0, -0.3, 0]}>
       {routes.map((route, i) => (
         <RouteOrb
           key={route.id}

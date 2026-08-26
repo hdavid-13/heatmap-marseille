@@ -198,6 +198,10 @@ export default function Dashboard() {
             <div className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
             <span className="text-green-400 font-medium">Live data</span>
           </div>
+          <a href="https://fresh-route.92-4-217-42.sslip.io"
+            className="flex items-center gap-1.5 bg-white/5 border border-white/10 rounded-full px-3 py-1.5 text-gray-300 hover:text-white hover:bg-white/10 transition-colors font-medium">
+            🌱 Fresh Route
+          </a>
         </div>
       </header>
 

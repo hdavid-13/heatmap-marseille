@@ -6,14 +6,15 @@ import {
 import { useRouter } from "expo-router";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { fetchRisk } from "@/api/engine";
+import { colors } from "@/theme";
 import type { RiskFeature } from "@/types";
 
-const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const MONTHS = ["Jan","Fév","Mar","Avr","Mai","Juin","Juil","Août","Sep","Oct","Nov","Déc"];
 
-const RISK_STYLE: Record<string, { color: string; emoji: string }> = {
-  high:   { color: "#ef4444", emoji: "🔥" },
-  medium: { color: "#f97316", emoji: "☀️" },
-  low:    { color: "#22c55e", emoji: "🌿" },
+const RISK_STYLE: Record<string, { color: string; emoji: string; label: string }> = {
+  high:   { color: colors.hot,     emoji: "🔥", label: "Élevé"  },
+  medium: { color: colors.warm,    emoji: "☀️", label: "Moyen"  },
+  low:    { color: colors.primary, emoji: "🌿", label: "Faible" },
 };
 
 export default function HeatmapScreen() {
@@ -39,30 +40,34 @@ export default function HeatmapScreen() {
 
   return (
     <SafeAreaView style={styles.container}>
+      <View style={styles.shell}>
 
       {/* Month selector */}
       <View style={styles.monthBar}>
         <TouchableOpacity onPress={() => router.replace("/")} style={styles.backBtn}>
-          <Text style={styles.backText}>← Back</Text>
+          <Text style={styles.backText}>← Retour</Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => setMonth((m) => Math.max(1, m - 1))}>
-          <Text style={styles.arrow}>‹</Text>
-        </TouchableOpacity>
-        <Text style={styles.monthLabel}>{MONTHS[month - 1]}</Text>
-        <TouchableOpacity onPress={() => setMonth((m) => Math.min(12, m + 1))}>
-          <Text style={styles.arrow}>›</Text>
-        </TouchableOpacity>
+        <View style={styles.monthPicker}>
+          <TouchableOpacity onPress={() => setMonth((m) => Math.max(1, m - 1))} hitSlop={10}>
+            <Text style={styles.arrow}>‹</Text>
+          </TouchableOpacity>
+          <Text style={styles.monthLabel}>{MONTHS[month - 1]}</Text>
+          <TouchableOpacity onPress={() => setMonth((m) => Math.min(12, m + 1))} hitSlop={10}>
+            <Text style={styles.arrow}>›</Text>
+          </TouchableOpacity>
+        </View>
       </View>
+      <Text style={styles.subtitle}>Zones classées par exposition à l’îlot de chaleur urbain</Text>
 
       {loading ? (
-        <ActivityIndicator style={{ marginTop: 40 }} color="#16a34a" />
+        <ActivityIndicator style={{ marginTop: 40 }} color={colors.primary} />
       ) : (
         <FlatList
           data={features}
           keyExtractor={(item) => item.properties.name}
           contentContainerStyle={styles.list}
           renderItem={({ item, index }) => {
-            const { color, emoji } = RISK_STYLE[item.properties.risk_level];
+            const { color, emoji, label } = RISK_STYLE[item.properties.risk_level];
             return (
               <View style={styles.row}>
                 <Text style={styles.rank}>#{index + 1}</Text>
@@ -70,44 +75,47 @@ export default function HeatmapScreen() {
                 <View style={styles.info}>
                   <Text style={styles.name}>{item.properties.name}</Text>
                   <Text style={styles.score}>
-                    UHI {(item.properties.uhi_score * 100).toFixed(0)}%
+                    ICU {(item.properties.uhi_score * 100).toFixed(0)}%
                   </Text>
                 </View>
                 <View style={[styles.pill, { backgroundColor: color }]}>
-                  <Text style={styles.pillText}>{item.properties.risk_level}</Text>
+                  <Text style={styles.pillText}>{label}</Text>
                 </View>
               </View>
             );
           }}
         />
       )}
+      </View>
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: "#f0fdf4" },
+  container: { flex: 1, backgroundColor: colors.bg },
+  shell:     { flex: 1, width: "100%", maxWidth: 640, alignSelf: "center" },
   monthBar: {
-    flexDirection: "row", alignItems: "center", justifyContent: "center",
-    gap: 16, paddingVertical: 14, paddingHorizontal: 16, backgroundColor: "#fff",
-    borderBottomWidth: 1, borderBottomColor: "#d1fae5",
+    flexDirection: "row", alignItems: "center", justifyContent: "space-between",
+    paddingVertical: 14, paddingHorizontal: 20, backgroundColor: colors.surface,
+    borderBottomWidth: 1, borderBottomColor: colors.border,
   },
+  monthPicker: { flexDirection: "row", alignItems: "center", gap: 16 },
   backBtn:  { marginRight: 8 },
-  backText: { fontSize: 14, color: "#6b7280" },
-  arrow: { fontSize: 28, color: "#16a34a", fontWeight: "300" },
-  monthLabel: { fontSize: 18, fontWeight: "700", color: "#166534", width: 50, textAlign: "center" },
+  backText: { fontSize: 14, color: colors.textSub },
+  arrow: { fontSize: 28, color: colors.primary, fontWeight: "300" },
+  monthLabel: { fontSize: 16, fontWeight: "700", color: colors.text, width: 44, textAlign: "center" },
+  subtitle: { fontSize: 12, color: colors.textDim, paddingHorizontal: 20, paddingTop: 12 },
   list: { padding: 16, gap: 10 },
   row: {
     flexDirection: "row", alignItems: "center", gap: 12,
-    backgroundColor: "#fff", borderRadius: 12, padding: 14,
-    shadowColor: "#000", shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.06, shadowRadius: 4, elevation: 2,
+    backgroundColor: colors.card, borderRadius: 14, padding: 14,
+    borderWidth: 1, borderColor: colors.cardBorder,
   },
-  rank: { width: 28, fontSize: 12, color: "#9ca3af", textAlign: "right" },
+  rank: { width: 26, fontSize: 12, color: colors.textDim, textAlign: "right" },
   emoji: { fontSize: 22 },
   info: { flex: 1 },
-  name: { fontSize: 14, fontWeight: "600", color: "#111827" },
-  score: { fontSize: 12, color: "#6b7280", marginTop: 2 },
+  name: { fontSize: 14, fontWeight: "600", color: colors.text },
+  score: { fontSize: 12, color: colors.textSub, marginTop: 2 },
   pill: { borderRadius: 20, paddingHorizontal: 10, paddingVertical: 4 },
-  pillText: { color: "#fff", fontSize: 11, fontWeight: "700" },
+  pillText: { color: "#0a1810", fontSize: 11, fontWeight: "700" },
 });

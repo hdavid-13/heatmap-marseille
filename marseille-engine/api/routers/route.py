@@ -60,8 +60,15 @@ def get_fresh_route(
     from_lon: float = Query(...),
     to_lat: float = Query(...),
     to_lon: float = Query(...),
+    via_lat: float | None = Query(None),
+    via_lon: float | None = Query(None),
 ):
-    """Returns the coolest pedestrian route between two points."""
+    """Returns the coolest pedestrian route between two points.
+
+    If via_lat/via_lon is given, the route is guaranteed to pass through
+    that point (e.g. "route me through this park"): it's computed as two
+    green-weighted legs, from → via and via → to, joined together.
+    """
     t0 = time.time()
 
     G = graph_builder.get()
@@ -71,8 +78,16 @@ def get_fresh_route(
     try:
         src = _nearest_node(G, from_lat, from_lon)
         dst = _nearest_node(G, to_lat, to_lon)
-        # A* with geographic heuristic — faster than Dijkstra for point-to-point
-        path = nx.astar_path(G, src, dst, heuristic=_geo_heuristic(G), weight="green_weight")
+        # Dijkstra, not A*: green_weight can discount an edge below its physical
+        # length, so straight-line distance isn't an admissible A* heuristic here
+        # (it can overestimate the true remaining cost and prune the real optimum).
+        if via_lat is not None and via_lon is not None:
+            via = _nearest_node(G, via_lat, via_lon)
+            leg1 = nx.shortest_path(G, src, via, weight="green_weight")
+            leg2 = nx.shortest_path(G, via, dst, weight="green_weight")
+            path = leg1 + leg2[1:]
+        else:
+            path = nx.shortest_path(G, src, dst, weight="green_weight")
     except nx.NetworkXNoPath:
         raise HTTPException(status_code=404, detail="No path found between the two points")
     except Exception as e:  # noqa: BLE001 -- deliberate catch-all, surfaced as 500

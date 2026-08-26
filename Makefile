@@ -6,6 +6,9 @@ APP_DIR       := marseille-app
 DASHBOARD_DIR := marseille-dashboard
 MOBILE_DIR    := fresh-route
 
+# Per-machine overrides (e.g. PORT := 8002), gitignored, not shared.
+-include Makefile.local
+
 # Forwarded to marseille-engine/Makefile. Empty UV_PYTHON lets uv pick its own
 # interpreter (respects .python-version, pinned to 3.13); set it to force a
 # specific one, e.g. the 42-school machines: `make install UV_PYTHON=/usr/bin/python3`

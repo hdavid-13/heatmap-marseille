@@ -3,15 +3,18 @@
  *
  * Ogni route ha la propria cartella in orbs/:
  *   orbs/vieux-port/   → route id "1" (Vieux-Port → Parc Borély)
- *   orbs/corniche/     → route id "2" (futuro)
- *   orbs/longchamp/    → route id "3" (futuro)
- *   orbs/castellane/   → route id "4" (futuro)
+ *   orbs/notre-dame-de-la-garde/ → route id "2"
+ *   orbs/calanques/    → route id "3"
+ *   orbs/corniche/     → route id "4"
  *
  * Per aggiungere un nuovo orb: crea la cartella, esporta il componente,
  * e aggiungi la voce in ORB_MAP qui sotto.
  */
 
 import { VieuxPortOrb } from "./orbs/vieux-port";
+import { NotreDameDeLaGardeOrb } from "./orbs/notre-dame-de-la-garde";
+import { CalanquesOrb } from "./orbs/calanques";
+import { CornicheOrb } from "./orbs/corniche";
 import { GenericOrb }   from "./orbs/GenericOrb";
 import type { DemoRoute } from "../../types";
 
@@ -29,9 +32,9 @@ type OrbComponent = React.ComponentType<{ isActive: boolean; onTap?: () => void;
 
 const ORB_MAP: Record<string, OrbComponent> = {
   "1": VieuxPortOrb,
-  // "2": CornichemOrb,
-  // "3": LongchampOrb,
-  // "4": CastellaneOrb,
+  "2": NotreDameDeLaGardeOrb,
+  "3": CalanquesOrb,
+  "4": CornicheOrb,
 };
 
 // ─── Wrapper con posizione nel carousel ──────────────────────────────────────
