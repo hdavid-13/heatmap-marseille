@@ -1,4 +1,3 @@
-import numpy as np
 from core.raster_query import sample_point
 
 _PEDESTRIAN = {"footway", "path", "pedestrian", "cycleway"}

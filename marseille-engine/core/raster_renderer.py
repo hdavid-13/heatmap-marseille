@@ -3,6 +3,7 @@ Converts the UHI raster to a colourised PNG for Leaflet ImageOverlay.
 Supports temporal mode: applies MODIS zone anomalies to modulate pixel values.
 """
 import io
+
 import numpy as np
 from PIL import Image
 

@@ -1,14 +1,15 @@
+from typing import Literal
+
 from pydantic import BaseModel
-from typing import Optional, Literal
 
 
 class UHIPoint(BaseModel):
     lat: float
     lon: float
     uhi_score: float
-    ndvi: Optional[float]
-    ndwi: Optional[float]
-    swir: Optional[float]
+    ndvi: float | None
+    ndwi: float | None
+    swir: float | None
     label: Literal["cool", "warm", "hot"]
 
 

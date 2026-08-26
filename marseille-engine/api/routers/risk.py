@@ -1,4 +1,5 @@
 import json
+
 from fastapi import APIRouter, Query, Request
 
 from core.risk_scorer import compute_risk_level

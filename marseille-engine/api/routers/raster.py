@@ -1,8 +1,9 @@
 import numpy as np
-from fastapi import APIRouter, Request, Query
-from fastapi.responses import Response, JSONResponse
+from fastapi import APIRouter, Query, Request
+from fastapi.responses import JSONResponse, Response
+
+from api.routers.timeline import BASELINE_END, BASELINE_START, ZONES, _zone_annual
 from core.raster_renderer import raster_to_png
-from api.routers.timeline import _zone_annual, ZONES, BASELINE_START, BASELINE_END
 
 router = APIRouter()
 
@@ -13,7 +14,7 @@ def get_raster_png(request: Request, scale: float = Query(0.25, ge=0.05, le=1.0)
     loader = request.app.state.loader
     data = loader.raster_data.copy()
     mask = np.isnan(data)
-    step = max(1, int(round(1.0 / scale)))
+    step = max(1, round(1.0 / scale))
     png_bytes = raster_to_png(data[::step, ::step], mask[::step, ::step])
     return Response(content=png_bytes, media_type="image/png", headers={
         "Cache-Control": "public, max-age=3600",
@@ -30,7 +31,7 @@ def get_raster_raw(request: Request, scale: float = Query(0.3, ge=0.05, le=1.0))
     """
     loader = request.app.state.loader
     data = loader.raster_data  # already NaN for nodata
-    step = max(1, int(round(1.0 / scale)))
+    step = max(1, round(1.0 / scale))
     downsampled = data[::step, ::step].astype(np.float32)
 
     rows, cols = downsampled.shape

@@ -1,7 +1,7 @@
 import numpy as np
-from fastapi import APIRouter, Request, Query, HTTPException
+from fastapi import APIRouter, HTTPException, Query, Request
 
-from api.models import HistoryResponse, HistoryPoint, MODIS_ZONES
+from api.models import MODIS_ZONES, HistoryPoint, HistoryResponse
 
 router = APIRouter()
 

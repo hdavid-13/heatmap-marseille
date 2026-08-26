@@ -1,9 +1,10 @@
-from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+
+from api.routers import history, raster, risk, route, timeline, uhi
 from core.data_loader import DataLoader
-from api.routers import uhi, history, route, risk, raster, timeline
 
 
 @asynccontextmanager

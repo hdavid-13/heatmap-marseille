@@ -143,7 +143,7 @@ const styles = StyleSheet.create({
     elevation: 5,
   },
   pinsOverlay: {
-    ...StyleSheet.absoluteFillObject,
+    ...StyleSheet.absoluteFill,
     pointerEvents: "none",
   },
 });

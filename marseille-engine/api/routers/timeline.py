@@ -4,7 +4,7 @@ Anomaly = (year_lst - baseline_mean) where baseline = 2000-2010 average.
 Used by the dashboard timeline slider.
 """
 import numpy as np
-from fastapi import APIRouter, Query, Request, HTTPException
+from fastapi import APIRouter, HTTPException, Query, Request
 
 router = APIRouter()
 
@@ -62,8 +62,8 @@ def get_snapshot(request: Request, year: int = Query(..., ge=2000, le=2024)):
     if max_abs == 0:
         max_abs = 1.0
 
-    for zone in result:
-        result[zone]["anomaly_norm"] = round(result[zone]["anomaly"] / max_abs, 3)
+    for zone, anomaly in zip(ZONES, anomalies):
+        result[zone]["anomaly_norm"] = round(anomaly / max_abs, 3)
 
     return {"year": year, "zones": result}
 

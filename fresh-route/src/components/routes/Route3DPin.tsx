@@ -1,7 +1,7 @@
-import { Suspense, useMemo, useState } from "react";
+import { Suspense, useMemo, useRef, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { View, StyleSheet } from "react-native";
-import { Text, useFrame } from "@react-three/fiber";
+import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 import type { DemoRoute } from "@/types";
 import { colors } from "@/theme";
@@ -64,8 +64,6 @@ export default function Route3DPin({ route, isSelected, pointType, onPress }: Ro
     </View>
   );
 }
-
-const { useRef } = require("react");
 
 const styles = StyleSheet.create({
   container: {

@@ -1,4 +1,3 @@
-import pandas as pd
 
 
 # Months considered high-risk for heat (Mediterranean climate)

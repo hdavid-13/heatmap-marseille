@@ -1,3 +1,5 @@
+from typing import Literal
+
 import numpy as np
 import rasterio.transform
 
@@ -16,7 +18,7 @@ def sample_point(
     return None
 
 
-def uhi_to_label(score: float) -> str:
+def uhi_to_label(score: float) -> Literal["cool", "warm", "hot"]:
     if score < 0.3:
         return "cool"
     elif score < 0.6:

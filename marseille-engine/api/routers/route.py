@@ -1,9 +1,11 @@
+import itertools
 import time
-import networkx as nx
-from pyproj import Transformer
-from fastapi import APIRouter, Query, Request, HTTPException
 
+import networkx as nx
 import osmnx as ox
+from fastapi import APIRouter, HTTPException, Query, Request
+from pyproj import Transformer
+
 from core import graph_builder
 from core.raster_query import sample_point, uhi_to_label
 
@@ -31,7 +33,7 @@ def get_fastest_route(
         path = nx.astar_path(G, src, dst, heuristic=_geo_heuristic(G), weight="length")
     except nx.NetworkXNoPath:
         raise HTTPException(status_code=404, detail="No path found")
-    except Exception as e:
+    except Exception as e:  # noqa: BLE001 -- deliberate catch-all, surfaced as 500
         raise HTTPException(status_code=500, detail=str(e))
 
     geojson = _path_to_geojson(G, path)
@@ -73,7 +75,7 @@ def get_fresh_route(
         path = nx.astar_path(G, src, dst, heuristic=_geo_heuristic(G), weight="green_weight")
     except nx.NetworkXNoPath:
         raise HTTPException(status_code=404, detail="No path found between the two points")
-    except Exception as e:
+    except Exception as e:  # noqa: BLE001 -- deliberate catch-all, surfaced as 500
         raise HTTPException(status_code=500, detail=str(e))
 
     geojson = _path_to_geojson(G, path)
@@ -123,7 +125,7 @@ def _path_to_geojson(G, path: list) -> dict:
 
 def _path_distance_m(G, path: list) -> float:
     total = 0.0
-    for a, b in zip(path[:-1], path[1:]):
+    for a, b in itertools.pairwise(path):
         edges = G.get_edge_data(a, b)
         if edges:
             best = min(edges.values(), key=lambda d: float(d.get("length", 1e9)))

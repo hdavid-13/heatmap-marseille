@@ -1,8 +1,9 @@
 import json
-import numpy as np
-from fastapi import APIRouter, Query, Request, HTTPException
 
-from api.models import UHIPoint, QuartierStats
+import numpy as np
+from fastapi import APIRouter, HTTPException, Query, Request
+
+from api.models import QuartierStats, UHIPoint
 from core.raster_query import sample_point, uhi_to_label
 
 router = APIRouter()
