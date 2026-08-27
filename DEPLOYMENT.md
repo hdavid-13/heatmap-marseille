@@ -9,14 +9,16 @@ from this file.
 | Service             | Local port | Public URL                                            |
 |----------------------|-----------:|---------------------------------------------------------|
 | fresh-route (Expo)   | 8081       | `https://fresh-route.92-4-217-42.sslip.io`               |
-| marseille-app        | 5173       | `https://marseille-app.92-4-217-42.sslip.io`              |
+| marseille-app        | 5176       | `https://marseille-app.92-4-217-42.sslip.io`              |
 | marseille-dashboard  | 5175       | `https://marseille-dashboard.92-4-217-42.sslip.io`         |
 | marseille-engine     | 8003       | `https://marseille-engine.92-4-217-42.sslip.io`            |
 
 Ports 8000/8001/8010/5174 are taken by unrelated services on this shared
 box — don't reuse them (see `marseille-engine/Makefile.local`, gitignored,
 which pins `PORT := 8003`; marseille-dashboard's own `dev` script and
-`vite.config.ts` are pinned to 5175 for the same reason).
+`vite.config.ts` are pinned to 5175 for the same reason). 5173 also isn't
+free — an unrelated ad-hoc `portfolio/site` dev server was squatting it, so
+marseille-app was moved to 5176 (`marseille-app/vite.config.ts`).
 
 ## Traefik
 
@@ -43,7 +45,7 @@ http:
 ```
 
 Files currently in place: `fresh-route.yml` (8081), `marseille-app.yml`
-(5173), `marseille-dashboard.yml` (5175), `marseille-engine.yml` (8003).
+(5176), `marseille-dashboard.yml` (5175), `marseille-engine.yml` (8003).
 Traefik watches the directory (`--providers.file.watch=true`), so dropping
 in a new/edited file is picked up without a restart.
 
@@ -55,14 +57,16 @@ firewall to reach a plain `npm run dev` / `uvicorn` process:
 
 ```bash
 sudo ufw allow 8081/tcp comment 'fresh-route dev'
-sudo ufw allow 5173/tcp comment 'marseille-app dev'
+sudo ufw allow 5176/tcp comment 'marseille-app dev'
 sudo ufw allow 5175/tcp comment 'marseille-dashboard dev'
 sudo ufw allow 8003/tcp comment 'marseille-engine dev'
 ```
 
-A stale `5174/tcp` rule (the dashboard's old, now-conflicting port) is
-still open — harmless, but fine to `sudo ufw delete allow 5174/tcp` since
-nothing serves there anymore.
+Stale rules still open, harmless but fine to remove since nothing serves
+there anymore: `5174/tcp` (the dashboard's old, now-conflicting port) and
+`5173/tcp` (marseille-app's old port, freed because an unrelated
+`portfolio/site` dev server was squatting it) — `sudo ufw delete allow
+5174/tcp` / `sudo ufw delete allow 5173/tcp`.
 
 ## Vite dev servers specifically
 

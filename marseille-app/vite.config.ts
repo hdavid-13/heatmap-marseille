@@ -9,7 +9,8 @@ export default defineConfig(({ mode }) => {
   return {
     plugins: [react(), tailwindcss()],
     server: {
-      port: 5173,
+      port: 5176,
+      host: true,
       allowedHosts: ["marseille-app.92-4-217-42.sslip.io"],
       proxy: {
         "/api": {

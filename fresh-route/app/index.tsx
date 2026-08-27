@@ -9,6 +9,9 @@ import { useRoute } from "@/hooks/useRoute";
 import { DEMO_ROUTES, ROUTE_OPTIONS } from "@/data/demoRoutes";
 import type { DemoRoute } from "@/types";
 
+const SCENE_TOP = 170;
+const SCENE_HEIGHT_FRAC = Platform.OS === "web" ? 0.45 : 0.4;
+
 function DotRow({ active }: { active: number }) {
   return <View style={styles.dots}>{DEMO_ROUTES.map((route, index) => <View key={route.id} style={[styles.dot, index === active && styles.dotActive]} />)}</View>;
 }
@@ -25,14 +28,40 @@ function RouteOption({ route, loading, onPress }: { route: DemoRoute; loading: b
   );
 }
 
+const CARD_PITCH = 220 + 10;
+
 function RouteSheet({ landmark, loadingId, onSelect }: { landmark: DemoRoute; loadingId: string | null; onSelect: (route: DemoRoute) => void }) {
   const options = ROUTE_OPTIONS[landmark.id];
+  const scrollRef = useRef<ScrollView>(null);
+  const [scrollX, setScrollX] = useState(0);
+  const [containerWidth, setContainerWidth] = useState(0);
+  const [contentWidth, setContentWidth] = useState(0);
+  const scrollMax = Math.max(0, contentWidth - containerWidth);
+
+  const scrollByCard = (dir: 1 | -1) => {
+    const target = Math.max(0, Math.min(scrollMax, scrollX + dir * CARD_PITCH));
+    scrollRef.current?.scrollTo({ x: target, animated: true });
+  };
+
   return (
     <View style={styles.sheet}>
       <View style={styles.sheetHeader}><View><Text style={styles.eyebrow}>{options.length} PARCOURS DISPONIBLES</Text><Text style={styles.sheetTitle}>Depuis {landmark.from.label}</Text></View><View style={styles.live}><View style={styles.liveDot} /><Text style={styles.liveText}>Temps réel</Text></View></View>
-      <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.optionList}>
-        {options.map((route) => <RouteOption key={route.id} route={route} loading={loadingId === route.id} onPress={() => onSelect(route)} />)}
-      </ScrollView>
+      <View style={styles.carousel}>
+        {scrollX > 4 && <TouchableOpacity style={[styles.arrow, styles.arrowLeft]} onPress={() => scrollByCard(-1)}><Text style={styles.arrowText}>‹</Text></TouchableOpacity>}
+        <ScrollView
+          ref={scrollRef}
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          contentContainerStyle={styles.optionList}
+          onLayout={(e) => setContainerWidth(e.nativeEvent.layout.width)}
+          onContentSizeChange={(w) => setContentWidth(w)}
+          onScroll={(e) => setScrollX(e.nativeEvent.contentOffset.x)}
+          scrollEventThrottle={16}
+        >
+          {options.map((route) => <RouteOption key={route.id} route={route} loading={loadingId === route.id} onPress={() => onSelect(route)} />)}
+        </ScrollView>
+        {scrollX < scrollMax - 4 && <TouchableOpacity style={[styles.arrow, styles.arrowRight]} onPress={() => scrollByCard(1)}><Text style={styles.arrowText}>›</Text></TouchableOpacity>}
+      </View>
     </View>
   );
 }
@@ -80,12 +109,12 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   root:{flex:1,backgroundColor:"#07110b"},
   shell:{flex:1,width:"100%",maxWidth:860,alignSelf:"center",position:"relative",...(Platform.OS==="web"?{boxShadow:"0 0 80px rgba(0,0,0,0.6)"}:{})},
-  safe:{flex:1}, scene:{position:"absolute",top:170,left:0,right:0,height:Platform.OS==="web"?"45%":"40%"}, orbTarget:{position:"absolute",top:170,left:"20%",right:"20%",height:240,zIndex:2},
+  safe:{flex:1}, scene:{position:"absolute",top:SCENE_TOP,left:0,right:0,height:`${SCENE_HEIGHT_FRAC*100}%`}, orbTarget:{position:"absolute",top:SCENE_TOP,left:"20%",right:"20%",height:240,zIndex:2},
   topBar:{zIndex:3,flexDirection:"row",flexWrap:"wrap",justifyContent:"space-between",alignItems:"center",rowGap:8,paddingHorizontal:24,paddingTop:Platform.OS==="web"?18:8}, brand:{color:colors.primary,fontSize:12,fontWeight:"900",letterSpacing:2.5},city:{color:colors.textDim,fontSize:10,fontWeight:"700",letterSpacing:3,marginTop:3},
   topBarActions:{flexDirection:"row",flexWrap:"wrap",gap:8},
   heatBtn:{backgroundColor:"rgba(13,32,24,.8)",borderWidth:1,borderColor:colors.cardBorder,borderRadius:22,paddingHorizontal:14,paddingVertical:9},heatBtnText:{color:colors.textSub,fontSize:12,fontWeight:"700"},
   hero:{zIndex:3,alignItems:"center",marginTop:24,paddingHorizontal:24},placeName:{color:colors.text,fontSize:28,fontWeight:"900",letterSpacing:-.7},placeDescription:{color:colors.textSub,fontSize:13,marginTop:6,textAlign:"center"},hint:{color:colors.textDim,fontSize:10,marginTop:11,letterSpacing:.3},dots:{flexDirection:"row",gap:6,marginTop:13},dot:{width:6,height:6,borderRadius:4,backgroundColor:colors.textMuted},dotActive:{width:24,backgroundColor:colors.primary},spacer:{flex:1},
   discover:{zIndex:4,margin:16,padding:20,borderRadius:22,backgroundColor:"rgba(15,35,25,.97)",borderWidth:1,borderColor:"#294b36",flexDirection:"row",alignItems:"center",justifyContent:"space-between"},discoverLabel:{color:colors.primary,fontSize:10,fontWeight:"900",letterSpacing:1.4},discoverTitle:{color:colors.text,fontSize:20,fontWeight:"800",marginTop:4},discoverArrow:{color:colors.primary,fontSize:30},
-  sheet:{zIndex:4,backgroundColor:"rgba(8,22,14,.98)",borderTopWidth:1,borderColor:"#294333",paddingTop:18,paddingBottom:Platform.OS==="web"?22:10},sheetHeader:{paddingHorizontal:20,flexDirection:"row",justifyContent:"space-between",alignItems:"center"},eyebrow:{color:colors.primary,fontSize:9,fontWeight:"900",letterSpacing:1.5},sheetTitle:{color:colors.text,fontSize:20,fontWeight:"800",marginTop:3},live:{flexDirection:"row",alignItems:"center",gap:6},liveDot:{width:7,height:7,borderRadius:4,backgroundColor:colors.primary},liveText:{color:colors.textDim,fontSize:10},optionList:{paddingHorizontal:16,paddingTop:14,gap:10},
+  sheet:{zIndex:4,backgroundColor:"rgba(8,22,14,.98)",borderTopWidth:1,borderColor:"#294333",paddingTop:18,paddingBottom:Platform.OS==="web"?22:10},sheetHeader:{paddingHorizontal:20,flexDirection:"row",justifyContent:"space-between",alignItems:"center"},eyebrow:{color:colors.primary,fontSize:9,fontWeight:"900",letterSpacing:1.5},sheetTitle:{color:colors.text,fontSize:20,fontWeight:"800",marginTop:3},live:{flexDirection:"row",alignItems:"center",gap:6},liveDot:{width:7,height:7,borderRadius:4,backgroundColor:colors.primary},liveText:{color:colors.textDim,fontSize:10},carousel:{position:"relative"},arrow:{position:"absolute",top:"50%",marginTop:-18,width:36,height:36,borderRadius:18,backgroundColor:"rgba(13,32,24,.85)",borderWidth:1,borderColor:colors.cardBorder,alignItems:"center",justifyContent:"center",zIndex:5},arrowLeft:{left:6},arrowRight:{right:6},arrowText:{color:colors.primary,fontSize:20,fontWeight:"900",lineHeight:20},optionList:{paddingHorizontal:16,paddingTop:14,gap:10},
   option:{width:220,padding:14,borderRadius:18,backgroundColor:"#10251a",borderWidth:1,borderColor:"#223d2d"},optionTop:{flexDirection:"row",justifyContent:"space-between",gap:8},optionName:{color:colors.text,fontSize:15,fontWeight:"800",flex:1},score:{fontSize:16,fontWeight:"900"},optionMeta:{color:colors.textSub,fontSize:10,marginTop:5},tagRow:{flexDirection:"row",gap:5,marginTop:10},tag:{color:colors.textDim,fontSize:9,backgroundColor:"#0a1911",paddingHorizontal:7,paddingVertical:4,borderRadius:8},optionAction:{height:32,borderRadius:10,borderWidth:1,alignItems:"center",justifyContent:"center",marginTop:12},optionActionText:{fontSize:10,fontWeight:"800"},
 });
